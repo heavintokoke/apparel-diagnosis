@@ -8,6 +8,48 @@ const $$ = (selector) => Array.from(document.querySelectorAll(selector));
 function show(selector) { $(selector).classList.remove('hidden'); }
 function hide(selector) { $(selector).classList.add('hidden'); }
 
+function siteBasePath() {
+  const marker = '/modules/01-enterprise-diagnosis/';
+  const markerIndex = location.pathname.indexOf(marker);
+  if (markerIndex >= 0) {
+    return location.pathname.slice(0, markerIndex + 1);
+  }
+  if (location.pathname.endsWith('/')) {
+    return location.pathname;
+  }
+  return location.pathname.replace(/[^/]*$/, '');
+}
+
+function resolveAppLink(path) {
+  const value = String(path || '').trim();
+  if (!value) return '';
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith('#')) return value;
+  const clean = value.replace(/^\/+/, '');
+  if (location.protocol === 'file:') {
+    return `http://127.0.0.1:8770/${clean}`;
+  }
+  if (['127.0.0.1', 'localhost', '::1'].includes(location.hostname)) {
+    return `/${clean}`;
+  }
+  return `${siteBasePath()}${clean}`;
+}
+
+function resolveHomeLink(hash = '') {
+  if (location.protocol === 'file:') {
+    return `http://127.0.0.1:8770/${hash}`;
+  }
+  if (['127.0.0.1', 'localhost', '::1'].includes(location.hostname)) {
+    return `/${hash}`;
+  }
+  return `${siteBasePath()}${hash}`;
+}
+
+function normalizeStaticLinks() {
+  $$('[data-home-link]').forEach((link) => {
+    link.href = resolveHomeLink(link.dataset.homeLink || '');
+  });
+}
+
 const routeSections = ['upload', 'summary', 'report', 'flows', 'sections', 'departments', 'missing', 'aiAssist', 'plan'];
 
 function routeForHash() {
@@ -51,7 +93,7 @@ function renderSystemModuleList() {
     const disabled = item.link ? '' : 'disabled';
     const content = `<strong>${escapeHtml(item.title)}</strong>`;
     if (item.link) {
-      return `<a class="${active}" href="${item.link}" data-module-id="${escapeHtml(item.id)}">${content}</a>`;
+      return `<a class="${active}" href="${resolveAppLink(item.link)}" data-module-id="${escapeHtml(item.id)}">${content}</a>`;
     }
     return `<button class="${disabled}" type="button" title="模块待开放" data-module-id="${escapeHtml(item.id)}">${content}</button>`;
   }).join('');
@@ -64,7 +106,7 @@ function renderModuleSwitcher() {
   switcher.innerHTML = modules.map((item) => {
     const selected = item.id === 'enterprise-diagnosis' ? ' selected' : '';
     const disabled = item.link ? '' : ' disabled';
-    const value = item.link || '';
+    const value = item.link ? resolveAppLink(item.link) : '';
     return `<option value="${escapeHtml(value)}"${selected}${disabled}>${escapeHtml(item.title)}</option>`;
   }).join('');
   switcher.addEventListener('change', () => {
@@ -587,6 +629,7 @@ $('#mergeAiBtn').addEventListener('click', async () => {
   }
 });
 
+normalizeStaticLinks();
 renderSystemModuleList();
 renderModuleSwitcher();
 checkHealth();

@@ -7,6 +7,38 @@ let activeModuleId = "enterprise-diagnosis";
 let dataCenterMaterials = [];
 let toastTimer = null;
 
+function siteBasePath() {
+  const marker = "/modules/01-enterprise-diagnosis/";
+  const markerIndex = location.pathname.indexOf(marker);
+  if (markerIndex >= 0) {
+    return location.pathname.slice(0, markerIndex + 1);
+  }
+  if (location.pathname.endsWith("/")) {
+    return location.pathname;
+  }
+  return location.pathname.replace(/[^/]*$/, "");
+}
+
+function resolveAppLink(path) {
+  const value = String(path || "").trim();
+  if (!value) return "";
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith("#")) return value;
+  const clean = value.replace(/^\/+/, "");
+  if (location.protocol === "file:") {
+    return `http://127.0.0.1:8770/${clean}`;
+  }
+  if (["127.0.0.1", "localhost", "::1"].includes(location.hostname)) {
+    return `/${clean}`;
+  }
+  return `${siteBasePath()}${clean}`;
+}
+
+function normalizeStaticLinks() {
+  $$("[data-app-link]").forEach((link) => {
+    link.href = resolveAppLink(link.dataset.appLink || link.getAttribute("href"));
+  });
+}
+
 function statusLabel(status) {
   return status === "ready" ? "可使用" : "待开放";
 }
@@ -18,7 +50,7 @@ function renderSideModuleList() {
     const active = item.id === activeModuleId ? "active" : "";
     const content = `<strong>${item.title}</strong>`;
     if (item.link) {
-      return `<a class="${active}" href="${item.link}" data-side-module-id="${item.id}">${content}</a>`;
+      return `<a class="${active}" href="${resolveAppLink(item.link)}" data-side-module-id="${item.id}">${content}</a>`;
     }
     return `<button class="${active}" type="button" data-side-module-id="${item.id}">${content}</button>`;
   }).join("");
@@ -87,7 +119,7 @@ function renderModuleGrid() {
     card.addEventListener("click", () => {
       const item = modules.find((module) => module.id === card.dataset.moduleId);
       if (window.matchMedia("(max-width: 760px)").matches && item?.link) {
-        window.location.href = item.link;
+        window.location.href = resolveAppLink(item.link);
         return;
       }
       if (window.matchMedia("(max-width: 760px)").matches && !item?.link) {
@@ -101,7 +133,7 @@ function renderModuleGrid() {
         event.preventDefault();
         const item = modules.find((module) => module.id === card.dataset.moduleId);
         if (window.matchMedia("(max-width: 760px)").matches && item?.link) {
-          window.location.href = item.link;
+          window.location.href = resolveAppLink(item.link);
           return;
         }
         if (window.matchMedia("(max-width: 760px)").matches && !item?.link) {
@@ -117,7 +149,7 @@ function renderModuleGrid() {
 function updateModuleAction(link, item, readyText) {
   if (!link) return;
   if (item.link) {
-    link.href = item.link;
+    link.href = resolveAppLink(item.link);
     link.textContent = readyText;
     link.classList.remove("disabled");
     link.removeAttribute("aria-disabled");
@@ -241,6 +273,7 @@ function bindDataCenter() {
 }
 
 function init() {
+  normalizeStaticLinks();
   renderSideModuleList();
   renderModuleGrid();
   renderDetail();
