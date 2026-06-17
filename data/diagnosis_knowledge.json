@@ -1,0 +1,980 @@
+{
+  "title": "服装企业全链路穿透式经营诊断",
+  "source_docx": "服装企业全链路穿透式经营诊断.docx",
+  "generated_at": "2026-06-17T09:40:07",
+  "main_lines": [
+    {
+      "id": "goods",
+      "name": "货的主线",
+      "description": "市场趋势、企划、研发、打版、生产、质检、入仓"
+    },
+    {
+      "id": "customer",
+      "name": "客的主线",
+      "description": "线索、需求、报价、看样、下单、交付、复购"
+    },
+    {
+      "id": "money",
+      "name": "钱的主线",
+      "description": "销售额、毛利、费用、库存、应收、现金流、净利润"
+    },
+    {
+      "id": "people",
+      "name": "人的主线",
+      "description": "老板、管理层、关键岗位、流程、数据、制度"
+    }
+  ],
+  "sections": [
+    {
+      "id": "S01_公司战略与商业模式诊断",
+      "number": 1,
+      "title": "公司战略与商业模式诊断",
+      "items": [
+        {
+          "name": "公司定位",
+          "question": "艺迅服饰到底是供应链公司、品牌公司、批发公司、工厂型公司，还是综合供货平台",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "核心客户",
+          "question": "主要服务直播客户、门店客户、电商客户、批发客户、品牌客户，还是档口客户",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "盈利模式",
+          "question": "靠高毛利、快周转、大客户订单、爆款返单、老客户复购，还是加工利润",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "竞争优势",
+          "question": "是款式快、价格低、品质稳、交期快、服务好，还是资源多",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "增长瓶颈",
+          "question": "是缺客户、缺产品、缺管理、缺产能、缺利润，还是缺系统",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "先判断公司到底靠什么赚钱。",
+      "focus": "这一块解决的是：公司方向对不对。"
+    },
+    {
+      "id": "S02_商品企划诊断",
+      "number": 2,
+      "title": "商品企划诊断",
+      "items": [
+        {
+          "name": "季度企划",
+          "question": "有没有春夏秋冬商品规划",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "品类结构",
+          "question": "连衣裙、上衣、裤子、套装、外套等比例是否合理",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "价格带",
+          "question": "引流款、利润款、形象款、爆款、清仓款是否区分",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "上新节奏",
+          "question": "每周、每月、每季上新是否有计划",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "款式来源",
+          "question": "是老板拍脑袋、市场抄款、设计开发、客户反馈，还是数据驱动",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "爆款复盘",
+          "question": "卖得好的款有没有复盘原因",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "滞销复盘",
+          "question": "卖不动的款有没有复盘原因",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "商品企划不是简单“开发新款”，而是决定公司每一季做什么货、给谁卖、怎么卖、赚什么钱。",
+      "focus": "这一块解决的是：公司是不是在有计划地做货。"
+    },
+    {
+      "id": "S03_设计研发诊断",
+      "number": 3,
+      "title": "设计研发诊断",
+      "items": [
+        {
+          "name": "研发方向",
+          "question": "是否围绕目标客户开发，而不是设计师个人审美",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "款式开发计划",
+          "question": "每周开发多少款、每月开发多少款、每季开发多少款",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "设计资料",
+          "question": "是否有趋势图、竞品图、面料卡、颜色方案、廓形方向",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "款式评审",
+          "question": "新款是否经过老板、销售、商品、客户反馈共同评审",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "开发命中率",
+          "question": "开发出来的款，有多少真正被客户认可和下单",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "开发周期",
+          "question": "从设计想法到样衣出来要多久",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "研发成本",
+          "question": "样衣、面料、人工、修改次数是否被统计",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "新款开发数",
+          "meaning": "判断研发产能"
+        },
+        {
+          "name": "样衣采纳率",
+          "meaning": "判断研发有效性"
+        },
+        {
+          "name": "爆款率",
+          "meaning": "判断开发质量"
+        },
+        {
+          "name": "样衣废版率",
+          "meaning": "判断开发浪费"
+        },
+        {
+          "name": "平均开发周期",
+          "meaning": "判断研发效率"
+        },
+        {
+          "name": "修改次数",
+          "meaning": "判断设计、版型、工艺沟通质量"
+        }
+      ],
+      "notes": [],
+      "intro": "研发是服装公司的源头之一。很多销售问题，其实是产品研发阶段就埋下来的。",
+      "focus": "这一块解决的是：公司开发出来的款是不是有市场价值。"
+    },
+    {
+      "id": "S04_板房_版型_样衣诊断",
+      "number": 4,
+      "title": "板房 / 版型 / 样衣诊断",
+      "items": [
+        {
+          "name": "打版需求单",
+          "question": "设计给版师的信息是否完整",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "纸样管理",
+          "question": "纸样是否编号、归档、可追溯",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "样衣管理",
+          "question": "每件样衣是否有货号、尺码、面料、版型记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "试版流程",
+          "question": "是否有试穿、评审、修改、确认机制",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "修改记录",
+          "question": "每次改版原因是否记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "尺码标准",
+          "question": "是否有稳定尺码表和版型标准",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "工艺单",
+          "question": "样衣确认后是否形成标准工艺单",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "大货一致性",
+          "question": "大货版是否和样衣版一致",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "一次通过率",
+          "question": "样衣第一次通过比例高不高",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "板师负荷",
+          "question": "版师是否长期被临时插单、返工拖累",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "这是你刚才提到的重点。板房不能被当成单纯“打版部门”，它直接影响版型、成本、交期、质量和客户满意度。",
+      "focus": "这一块解决的是：衣服版型能不能稳定，样衣能不能高效转化为大货。"
+    },
+    {
+      "id": "S05_面辅料与采购诊断",
+      "number": 5,
+      "title": "面辅料与采购诊断",
+      "items": [
+        {
+          "name": "面料供应商",
+          "question": "是否有稳定供应商档案",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "面料质量",
+          "question": "是否经常出现色差、缩水、起球、掉色、克重不稳",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "辅料管理",
+          "question": "拉链、纽扣、里布、吊牌、包装等是否标准化",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "采购周期",
+          "question": "常用面料多久能到，新面料多久能到",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "价格控制",
+          "question": "同类面料是否有比价机制",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "物料齐套",
+          "question": "开产前面辅料是否全部到齐",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "替代方案",
+          "question": "面料断货时是否有备选方案",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "来料检验",
+          "question": "面辅料到仓是否有检验标准",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "面料准时到货率",
+          "meaning": "判断采购交付能力"
+        },
+        {
+          "name": "来料不良率",
+          "meaning": "判断供应商质量"
+        },
+        {
+          "name": "面料色差率",
+          "meaning": "判断品质风险"
+        },
+        {
+          "name": "采购成本波动",
+          "meaning": "判断成本控制"
+        },
+        {
+          "name": "物料齐套率",
+          "meaning": "判断生产开工稳定性"
+        }
+      ],
+      "notes": [],
+      "intro": "很多服装公司的交期和质量问题，根源在面辅料。",
+      "focus": "这一块解决的是：生产是不是经常被面辅料拖住。"
+    },
+    {
+      "id": "S06_生产计划与排产诊断",
+      "number": 6,
+      "title": "生产计划与排产诊断",
+      "items": [
+        {
+          "name": "订单排期",
+          "question": "每个订单是否有生产排期表",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "产能评估",
+          "question": "接单前是否评估产能",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "交期承诺",
+          "question": "销售承诺客户交期前是否确认生产能力",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "插单机制",
+          "question": "急单、返单、补单是否有插单规则",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "生产优先级",
+          "question": "哪些订单先做，谁说了算",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "延期预警",
+          "question": "交期风险是否提前预警",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "产前准备",
+          "question": "面辅料、纸样、工艺单、样衣是否齐全",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "部门协同",
+          "question": "销售、跟单、采购、车间是否信息同步",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "生产不是“客户下单后马上催车间”，而是要有排产计划。",
+      "focus": "这一块重点看一个问题："
+    },
+    {
+      "id": "S07_生产车间诊断",
+      "number": 7,
+      "title": "生产车间诊断",
+      "items": [
+        {
+          "name": "车间布局",
+          "question": "裁剪、车缝、后整、包装流转是否顺畅",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "工序安排",
+          "question": "工序是否平衡，有没有明显瓶颈",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "标准工时",
+          "question": "每个款、每道关键工序有没有标准工时",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "日产能",
+          "question": "每条线每天能做多少件，是否有记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "在制品",
+          "question": "半成品堆积在哪个环节",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "返工情况",
+          "question": "哪些问题导致返工最多",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "员工熟练度",
+          "question": "熟手、新手、临时工比例如何",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "计件工资",
+          "question": "计件是否激励效率，也是否导致质量问题",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "设备情况",
+          "question": "机器是否经常故障，是否影响产能",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "现场管理",
+          "question": "裁片、半成品、成品、残次品是否区分清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "异常处理",
+          "question": "发现问题后谁处理、多久处理、是否复盘",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "日产量",
+          "meaning": "判断车间产能"
+        },
+        {
+          "name": "人均产量",
+          "meaning": "判断人效"
+        },
+        {
+          "name": "标准工时达成率",
+          "meaning": "判断生产效率"
+        },
+        {
+          "name": "返工率",
+          "meaning": "判断质量和工艺稳定性"
+        },
+        {
+          "name": "生产延期率",
+          "meaning": "判断交付能力"
+        },
+        {
+          "name": "在制品数量",
+          "meaning": "判断流程是否堵塞"
+        },
+        {
+          "name": "设备故障次数",
+          "meaning": "判断设备保障"
+        },
+        {
+          "name": "异常关闭时长",
+          "meaning": "判断管理响应速度"
+        }
+      ],
+      "notes": [],
+      "intro": "生产车间必须纳入诊断。它不是只看干净不干净，而是看效率、质量、秩序、异常和成本。",
+      "focus": "这一块解决的是：车间到底是高效生产，还是靠人硬干、靠催单推动。"
+    },
+    {
+      "id": "S08_工艺管理诊断",
+      "number": 8,
+      "title": "工艺管理诊断",
+      "items": [
+        {
+          "name": "工艺单",
+          "question": "每个款是否有标准工艺单",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "工艺说明",
+          "question": "关键部位做法是否清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "样衣对照",
+          "question": "车间是否按确认样生产",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "产前会",
+          "question": "大货开做前是否开产前说明会",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "首件确认",
+          "question": "第一件大货是否经过确认",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "工艺变更",
+          "question": "生产过程中改工艺是否有记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "难点工序",
+          "question": "哪些工序最容易出错",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "工艺培训",
+          "question": "新款开产前是否给车工讲解",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "工艺管理决定一件衣服能不能被稳定做出来。",
+      "focus": ""
+    },
+    {
+      "id": "S09_质量管理诊断",
+      "number": 9,
+      "title": "质量管理诊断",
+      "items": [
+        {
+          "name": "来料检",
+          "question": "面辅料进来有没有检查",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "裁剪检",
+          "question": "裁片尺寸、方向、色差是否检查",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "首件检",
+          "question": "第一件大货是否确认",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "巡检",
+          "question": "生产过程中是否及时发现问题",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "尾检",
+          "question": "成品是否逐批检查",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "包装检",
+          "question": "吊牌、包装、尺码、颜色是否正确",
+          "source_header": "质量节点"
+        },
+        {
+          "name": "客诉复盘",
+          "question": "客户投诉有没有分类、追责、改善",
+          "source_header": "质量节点"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "一次合格率",
+          "meaning": "判断生产稳定性"
+        },
+        {
+          "name": "返修率",
+          "meaning": "判断质量损耗"
+        },
+        {
+          "name": "客诉率",
+          "meaning": "判断客户体验"
+        },
+        {
+          "name": "退货率",
+          "meaning": "判断产品与质量问题"
+        },
+        {
+          "name": "质量异常次数",
+          "meaning": "判断管理风险"
+        },
+        {
+          "name": "同类问题重复率",
+          "meaning": "判断是否真正复盘"
+        }
+      ],
+      "notes": [],
+      "intro": "质量诊断不能只看最终有没有次品，要看质量控制点有没有前置。",
+      "focus": "这一块解决的是：质量问题是偶发，还是系统性失控。"
+    },
+    {
+      "id": "S10_生产跟单与交付诊断",
+      "number": 10,
+      "title": "生产跟单与交付诊断",
+      "items": [
+        {
+          "name": "订单信息",
+          "question": "客户需求、数量、颜色、尺码、交期是否完整",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "跟单表",
+          "question": "是否有统一生产跟单表",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "进度更新",
+          "question": "每个订单进度是否每日更新",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "异常记录",
+          "question": "缺料、返工、延期、质量问题是否记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "客户通知",
+          "question": "延期或异常是否及时通知客户",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "内部协同",
+          "question": "销售、采购、车间、仓库是否同步",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "交付复盘",
+          "question": "延期订单是否复盘原因",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "跟单是连接客户、销售、采购、车间、仓库的关键岗位。跟单弱，公司就会乱。",
+      "focus": "这一块解决的是：订单能不能被透明、稳定、准时地交付。"
+    },
+    {
+      "id": "S11_仓储与库存诊断",
+      "number": 11,
+      "title": "仓储与库存诊断",
+      "items": [
+        {
+          "name": "库位管理",
+          "question": "是否按款号、颜色、尺码、批次管理",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "库存准确",
+          "question": "系统库存和实际库存是否一致",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "入库流程",
+          "question": "成品入库是否有检查和记录",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "出库流程",
+          "question": "拣货、复核、打包、发货是否标准",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "残次品管理",
+          "question": "残次品是否单独区分",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "退货管理",
+          "question": "客户退货是否检查、分类、入账",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "滞销库存",
+          "question": "老款、断码、残次是否有清理机制",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "盘点机制",
+          "question": "多久盘点一次，差异怎么处理",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "库存准确率",
+          "meaning": "判断仓库基础管理"
+        },
+        {
+          "name": "发货及时率",
+          "meaning": "判断履约效率"
+        },
+        {
+          "name": "错发漏发率",
+          "meaning": "判断操作质量"
+        },
+        {
+          "name": "退货处理时长",
+          "meaning": "判断售后效率"
+        },
+        {
+          "name": "滞销库存金额",
+          "meaning": "判断资金占用"
+        },
+        {
+          "name": "库存周转天数",
+          "meaning": "判断资金效率"
+        }
+      ],
+      "notes": [],
+      "intro": "仓库不是简单存货，而是资金、效率、准确率和客户体验的交汇点。",
+      "focus": "这一块解决的是：公司有没有被库存拖死。"
+    },
+    {
+      "id": "S12_销售与客户管理诊断",
+      "number": 12,
+      "title": "销售与客户管理诊断",
+      "items": [
+        {
+          "name": "客户来源",
+          "question": "客户从哪里来",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "客户分层",
+          "question": "是否区分 A/B/C/D 客户",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "客户需求",
+          "question": "销售是否清楚客户风格、价格带、采购频率",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "推荐逻辑",
+          "question": "销售推荐产品是靠感觉，还是基于客户画像和货盘",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "跟进记录",
+          "question": "是否记录每次沟通",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "报价体系",
+          "question": "价格是否统一，有没有乱报价",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "样衣推进",
+          "question": "寄样、看样、反馈、成交是否有 SOP",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "复购机制",
+          "question": "老客户是否定期激活",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "客诉反馈",
+          "question": "客户反馈是否传回研发、板房、生产、质量",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "这部分保留，但要和后端打通。",
+      "focus": ""
+    },
+    {
+      "id": "S13_招商与渠道诊断",
+      "number": 13,
+      "title": "招商与渠道诊断",
+      "items": [
+        {
+          "name": "招商对象",
+          "question": "招直播客户、门店客户、电商客户、加盟商，还是批发客户",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "招商资料",
+          "question": "公司优势、产品优势、供应链优势是否讲清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "样衣展示",
+          "question": "样衣间、展厅、货盘是否能打动客户",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "合作政策",
+          "question": "起订量、价格、换货、补货、账期是否清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "招商漏斗",
+          "question": "线索、沟通、看样、成交、回款是否有数据",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "成交 SOP",
+          "question": "从咨询到成交是否有标准流程",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "客户案例",
+          "question": "是否有合作案例、爆款案例、供货案例",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "供应链公司、品牌公司、档口、工厂都需要招商诊断，但招商不能只看话术。",
+      "focus": "这一块解决的是：客户为什么要跟你合作，而不是跟别人合作。"
+    },
+    {
+      "id": "S14_线上内容与视觉诊断",
+      "number": 14,
+      "title": "线上内容与视觉诊断",
+      "items": [
+        {
+          "name": "图片资料",
+          "question": "产品图、细节图、面料图、上身图是否完整",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "视频内容",
+          "question": "是否展示产品、工厂、车间、样衣、客户案例",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "账号定位",
+          "question": "是招商号、产品号、老板号、工厂号，还是混乱发布",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "内容栏目",
+          "question": "是否有固定栏目",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "直播看款",
+          "question": "是否能服务客户远程看款和招商",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "素材库",
+          "question": "车间、板房、样衣、面料、发货是否有素材沉淀",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "转化链路",
+          "question": "客户看完内容后如何咨询、如何承接、如何成交",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "线上内容不能单独诊断“拍得好不好”，要看是否服务经营。",
+      "focus": "这一块解决的是：线上内容有没有成为销售和招商的工具。"
+    },
+    {
+      "id": "S15_财务_成本与利润诊断",
+      "number": 15,
+      "title": "财务、成本与利润诊断",
+      "items": [
+        {
+          "name": "单款成本",
+          "question": "面料、辅料、加工、包装、物流、人工是否算清",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "毛利核算",
+          "question": "每个款、每个客户、每个渠道毛利是否清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "费用结构",
+          "question": "人工、房租、拍摄、运营、售后、返工费用是否统计",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "应收账款",
+          "question": "客户欠款多少，账期多长，风险客户是谁",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "库存占用",
+          "question": "库存占用多少现金",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "返工损耗",
+          "question": "返工、残次、退货损失是否统计",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "报价逻辑",
+          "question": "报价是否基于成本和利润，而不是老板经验",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "很多服装公司销售额不低，但利润很薄，根因在成本没算清。",
+      "focus": "这一块解决的是：公司到底是真赚钱，还是只是在周转。"
+    },
+    {
+      "id": "S16_组织_绩效与数据系统诊断",
+      "number": 16,
+      "title": "组织、绩效与数据系统诊断",
+      "items": [
+        {
+          "name": "岗位职责",
+          "question": "每个岗位职责是否清楚",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "权责边界",
+          "question": "谁定款、谁定价、谁接单、谁排产、谁处理异常",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "会议机制",
+          "question": "有没有日会、周会、月度经营会",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "汇报机制",
+          "question": "每个部门每天、每周、每月报什么",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "绩效机制",
+          "question": "是否考核结果，也考核过程",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "数据工具",
+          "question": "是否使用 ERP、Excel、CRM、飞书、企微等",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "数据准确",
+          "question": "数据是否及时、准确、有人负责",
+          "source_header": "诊断项"
+        },
+        {
+          "name": "老板依赖",
+          "question": "哪些事老板不盯就停摆",
+          "source_header": "诊断项"
+        }
+      ],
+      "metrics": [],
+      "notes": [],
+      "intro": "最后看公司是否有系统支撑。",
+      "focus": "这一块解决的是：公司能不能从老板经验驱动，转向系统、数据、团队驱动。"
+    }
+  ],
+  "flows": [
+    {
+      "name": "商品开发流程",
+      "content": "企划 → 设计 → 打版 → 样衣 → 审版 → 成本 → 上新"
+    },
+    {
+      "name": "订单交付流程",
+      "content": "客户下单 → 跟单 → 采购 → 排产 → 生产 → 质检 → 发货"
+    },
+    {
+      "name": "客户成交流程",
+      "content": "线索 → 沟通 → 推荐 → 报价 → 看样 → 成交 → 复购"
+    },
+    {
+      "name": "异常处理流程",
+      "content": "发现问题 → 责任人 → 处理方案 → 客户沟通 → 复盘归档"
+    }
+  ],
+  "counts": {
+    "sections": 16,
+    "diagnosis_items": 117,
+    "quality_nodes": 7,
+    "assessment_points": 124,
+    "metrics": 31,
+    "flows": 4
+  }
+}
