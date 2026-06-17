@@ -1,0 +1,4253 @@
+{
+  "generated_at": "2026-06-17T14:03:40",
+  "mode": "static_preview",
+  "company_snapshot": "系统已完成资料抽取；请在网页中补充企业名称、规模、主营模式等基础信息后导出正式报告。",
+  "executive_summary": "本次共解析 8 个文件，形成 4200 个字符的资料包。16 个诊断板块平均得分 19 分，其中高风险 13 个、中风险 2 个。当前版本优先识别资料完整度、流程证据和关键指标缺失情况。",
+  "core_findings": [
+    "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+    "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。",
+    "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+    "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+    "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。"
+  ],
+  "root_causes": [
+    "关键经营数据没有稳定沉淀，导致问题只能凭经验判断。",
+    "部门流程与责任边界证据不足，异常难以及时定位到责任人和改善动作。",
+    "商品、客户、交付、财务数据之间尚未形成闭环，影响经营复盘质量。"
+  ],
+  "short_term_improvements": [
+    "先补齐高风险板块的基础台账、责任人和每周复盘机制。",
+    "建立统一的订单、样衣、库存、客户、质量异常数据模板。",
+    "把缺失指标纳入每周经营会检查清单。"
+  ],
+  "medium_term_system_build": [
+    "将商品开发、订单交付、客户成交、异常处理 4 条流程标准化。",
+    "把关键指标绑定到部门负责人，形成月度经营复盘。"
+  ],
+  "long_term_growth_path": [
+    "从老板经验驱动转向流程、数据、团队协同驱动。",
+    "逐步沉淀客户画像、爆款复盘、成本利润和供应链履约数据。"
+  ],
+  "sections": [
+    {
+      "id": "S01_公司战略与商业模式诊断",
+      "number": 1,
+      "title": "公司战略与商业模式诊断",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.0,
+      "finding": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+      "intro": "先判断公司到底靠什么赚钱。",
+      "focus": "这一块解决的是：公司方向对不对。",
+      "owner": "总经理/项目负责人",
+      "items": [
+        {
+          "name": "公司定位",
+          "question": "艺迅服饰到底是供应链公司、品牌公司、批发公司、工厂型公司，还是综合供货平台",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "公司定位",
+            "企业定位",
+            "业务定位",
+            "公司类型",
+            "商业定位",
+            "艺迅服饰到底是供应链公司",
+            "品牌公司",
+            "批发公司",
+            "工厂型公司",
+            "还是综合供货平台"
+          ],
+          "suggested_owner": "总经理/项目负责人",
+          "improvement_action": "由总经理/项目负责人建立“公司定位”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "核心客户",
+          "question": "主要服务直播客户、门店客户、电商客户、批发客户、品牌客户，还是档口客户",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "核心客户",
+            "目标客户",
+            "客户类型",
+            "客户群体",
+            "客户画像",
+            "主要服务直播客户",
+            "门店客户",
+            "电商客户",
+            "批发客户",
+            "品牌客户",
+            "还是档口客户"
+          ],
+          "suggested_owner": "总经理/项目负责人",
+          "improvement_action": "由总经理/项目负责人建立“核心客户”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "盈利模式",
+          "question": "靠高毛利、快周转、大客户订单、爆款返单、老客户复购，还是加工利润",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "盈利模式",
+            "赚钱方式",
+            "利润来源",
+            "收入模式",
+            "商业模式",
+            "靠高毛利",
+            "快周转",
+            "大客户订单",
+            "爆款返单",
+            "老客户复购",
+            "还是加工利润"
+          ],
+          "suggested_owner": "总经理/项目负责人",
+          "improvement_action": "由总经理/项目负责人建立“盈利模式”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "竞争优势",
+          "question": "是款式快、价格低、品质稳、交期快、服务好，还是资源多",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "竞争优势",
+            "核心优势",
+            "差异化",
+            "优势资源",
+            "卖点",
+            "是款式快",
+            "价格低",
+            "品质稳",
+            "交期快",
+            "服务好",
+            "还是资源多"
+          ],
+          "suggested_owner": "总经理/项目负责人",
+          "improvement_action": "由总经理/项目负责人建立“竞争优势”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "增长瓶颈",
+          "question": "是缺客户、缺产品、缺管理、缺产能、缺利润，还是缺系统",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "增长瓶颈",
+            "经营瓶颈",
+            "增长问题",
+            "业务卡点",
+            "限制增长",
+            "是缺客户",
+            "缺产品",
+            "缺管理",
+            "缺产能",
+            "缺利润",
+            "还是缺系统"
+          ],
+          "suggested_owner": "总经理/项目负责人",
+          "improvement_action": "由总经理/项目负责人建立“增长瓶颈”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "公司定位",
+        "核心客户",
+        "盈利模式",
+        "竞争优势",
+        "增长瓶颈"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S02_商品企划诊断",
+      "number": 2,
+      "title": "商品企划诊断",
+      "score": 57,
+      "risk": "medium",
+      "risk_label": "中风险",
+      "coverage": 0.57,
+      "metric_coverage": 0.57,
+      "finding": "商品企划诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。",
+      "intro": "商品企划不是简单“开发新款”，而是决定公司每一季做什么货、给谁卖、怎么卖、赚什么钱。",
+      "focus": "这一块解决的是：公司是不是在有计划地做货。",
+      "owner": "商品负责人",
+      "items": [
+        {
+          "name": "季度企划",
+          "question": "有没有春夏秋冬商品规划",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "季度企划",
+            "商品规划",
+            "季节规划",
+            "春夏秋冬规划",
+            "波段企划",
+            "有没有春夏秋冬商品规划"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“季度企划”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "品类结构",
+          "question": "连衣裙、上衣、裤子、套装、外套等比例是否合理",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。"
+          ],
+          "keywords": [
+            "品类结构",
+            "品类占比",
+            "品类规划",
+            "类目结构",
+            "货品结构",
+            "连衣裙",
+            "上衣",
+            "裤子",
+            "套装",
+            "外套等比例是否合理"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“品类结构”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "价格带",
+          "question": "引流款、利润款、形象款、爆款、清仓款是否区分",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。"
+          ],
+          "keywords": [
+            "价格带",
+            "价格区间",
+            "价格梯度",
+            "引流款",
+            "利润款",
+            "形象款",
+            "爆款",
+            "畅销款复盘",
+            "爆品复盘",
+            "热销款复盘",
+            "清仓款是否区分"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“价格带”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "上新节奏",
+          "question": "每周、每月、每季上新是否有计划",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。",
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "上新节奏",
+            "上新计划",
+            "上架节奏",
+            "新品节奏",
+            "波段上新",
+            "每周",
+            "每月",
+            "每季上新是否有计划"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“上新节奏”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "款式来源",
+          "question": "是老板拍脑袋、市场抄款、设计开发、客户反馈，还是数据驱动",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "款式来源",
+            "选款来源",
+            "开发来源",
+            "款源",
+            "设计来源",
+            "是老板拍脑袋",
+            "市场抄款",
+            "设计开发",
+            "客户反馈",
+            "还是数据驱动"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“款式来源”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "爆款复盘",
+          "question": "卖得好的款有没有复盘原因",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。"
+          ],
+          "keywords": [
+            "爆款复盘",
+            "畅销款复盘",
+            "爆品复盘",
+            "热销款复盘",
+            "卖得好的款有没有复盘原因"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“爆款复盘”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "滞销复盘",
+          "question": "卖不动的款有没有复盘原因",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "滞销复盘",
+            "滞销款复盘",
+            "动销差",
+            "清仓复盘",
+            "卖不动的款有没有复盘原因"
+          ],
+          "suggested_owner": "商品负责人",
+          "improvement_action": "由商品负责人建立“滞销复盘”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "季度企划",
+        "款式来源",
+        "滞销复盘"
+      ],
+      "evidence_count": 5
+    },
+    {
+      "id": "S03_设计研发诊断",
+      "number": 3,
+      "title": "设计研发诊断",
+      "score": 10,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.14,
+      "metric_coverage": 0.0,
+      "finding": "设计研发诊断资料明显不足，优先补齐研发方向、款式开发计划、设计资料，否则难以判断真实经营问题。",
+      "intro": "研发是服装公司的源头之一。很多销售问题，其实是产品研发阶段就埋下来的。",
+      "focus": "这一块解决的是：公司开发出来的款是不是有市场价值。",
+      "owner": "设计研发负责人",
+      "items": [
+        {
+          "name": "研发方向",
+          "question": "是否围绕目标客户开发，而不是设计师个人审美",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "研发方向",
+            "是否围绕目标客户开发",
+            "而不是设计师个人审美"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“研发方向”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "款式开发计划",
+          "question": "每周开发多少款、每月开发多少款、每季开发多少款",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "款式开发计划",
+            "每周开发多少款",
+            "每月开发多少款",
+            "每季开发多少款"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“款式开发计划”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "设计资料",
+          "question": "是否有趋势图、竞品图、面料卡、颜色方案、廓形方向",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "设计资料",
+            "是否有趋势图",
+            "竞品图",
+            "面料卡",
+            "颜色方案",
+            "廓形方向"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“设计资料”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "款式评审",
+          "question": "新款是否经过老板、销售、商品、客户反馈共同评审",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。",
+            "销售团队有客户分层、报价记录、成交转化和复购跟进，但部门责任边界仍需明确。"
+          ],
+          "keywords": [
+            "款式评审",
+            "新款是否经过老板",
+            "销售",
+            "商品",
+            "客户反馈共同评审"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“款式评审”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "开发命中率",
+          "question": "开发出来的款，有多少真正被客户认可和下单",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "开发命中率",
+            "采纳率",
+            "选中率",
+            "下单率",
+            "款式命中",
+            "开发出来的款"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“开发命中率”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "开发周期",
+          "question": "从设计想法到样衣出来要多久",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "开发周期",
+            "打样周期",
+            "样衣周期",
+            "出样周期"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“开发周期”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "研发成本",
+          "question": "样衣、面料、人工、修改次数是否被统计",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "研发成本",
+            "样衣",
+            "样衣档案",
+            "样衣编号",
+            "样衣记录",
+            "面料",
+            "人工",
+            "修改次数是否被统计"
+          ],
+          "suggested_owner": "设计研发负责人",
+          "improvement_action": "由设计研发负责人建立“研发成本”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "新款开发数",
+          "meaning": "判断研发产能",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        },
+        {
+          "name": "样衣采纳率",
+          "meaning": "判断研发有效性",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        },
+        {
+          "name": "爆款率",
+          "meaning": "判断开发质量",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        },
+        {
+          "name": "样衣废版率",
+          "meaning": "判断开发浪费",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        },
+        {
+          "name": "平均开发周期",
+          "meaning": "判断研发效率",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        },
+        {
+          "name": "修改次数",
+          "meaning": "判断设计、版型、工艺沟通质量",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "设计研发负责人"
+        }
+      ],
+      "missing_items": [
+        "研发方向",
+        "款式开发计划",
+        "设计资料",
+        "开发命中率",
+        "开发周期",
+        "研发成本"
+      ],
+      "evidence_count": 2
+    },
+    {
+      "id": "S04_板房_版型_样衣诊断",
+      "number": 4,
+      "title": "板房 / 版型 / 样衣诊断",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.0,
+      "finding": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。",
+      "intro": "这是你刚才提到的重点。板房不能被当成单纯“打版部门”，它直接影响版型、成本、交期、质量和客户满意度。",
+      "focus": "这一块解决的是：衣服版型能不能稳定，样衣能不能高效转化为大货。",
+      "owner": "板房负责人",
+      "items": [
+        {
+          "name": "打版需求单",
+          "question": "设计给版师的信息是否完整",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "打版需求单",
+            "制版需求",
+            "打样需求",
+            "设计需求单",
+            "款式资料",
+            "设计给版师的信息是否完整"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“打版需求单”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "纸样管理",
+          "question": "纸样是否编号、归档、可追溯",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "纸样管理",
+            "纸样编号",
+            "纸样归档",
+            "版型档案",
+            "纸样是否编号",
+            "归档",
+            "可追溯"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“纸样管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "样衣管理",
+          "question": "每件样衣是否有货号、尺码、面料、版型记录",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "样衣管理",
+            "样衣档案",
+            "样衣编号",
+            "样衣记录",
+            "每件样衣是否有货号",
+            "尺码",
+            "尺码表",
+            "尺寸标准",
+            "版型标准",
+            "面料",
+            "版型记录"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“样衣管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "试版流程",
+          "question": "是否有试穿、评审、修改、确认机制",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "试版流程",
+            "是否有试穿",
+            "评审",
+            "修改",
+            "改版记录",
+            "修改次数",
+            "变更记录",
+            "确认机制"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“试版流程”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "修改记录",
+          "question": "每次改版原因是否记录",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "修改记录",
+            "改版记录",
+            "修改次数",
+            "变更记录",
+            "每次改版原因是否记录"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“修改记录”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "尺码标准",
+          "question": "是否有稳定尺码表和版型标准",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "尺码标准",
+            "尺码表",
+            "尺寸标准",
+            "版型标准"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“尺码标准”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "工艺单",
+          "question": "样衣确认后是否形成标准工艺单",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工艺单",
+            "工艺资料",
+            "工艺说明",
+            "生产工艺单"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“工艺单”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "大货一致性",
+          "question": "大货版是否和样衣版一致",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "大货一致性",
+            "大货版是否和样衣版一致"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“大货一致性”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "一次通过率",
+          "question": "样衣第一次通过比例高不高",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "一次通过率",
+            "样衣第一次通过比例高不高"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“一次通过率”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "板师负荷",
+          "question": "版师是否长期被临时插单、返工拖累",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "板师负荷",
+            "版师是否长期被临时插单",
+            "返工拖累"
+          ],
+          "suggested_owner": "板房负责人",
+          "improvement_action": "由板房负责人建立“板师负荷”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "打版需求单",
+        "纸样管理",
+        "样衣管理",
+        "试版流程",
+        "修改记录",
+        "尺码标准",
+        "工艺单",
+        "大货一致性"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S05_面辅料与采购诊断",
+      "number": 5,
+      "title": "面辅料与采购诊断",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.0,
+      "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+      "intro": "很多服装公司的交期和质量问题，根源在面辅料。",
+      "focus": "这一块解决的是：生产是不是经常被面辅料拖住。",
+      "owner": "采购负责人",
+      "items": [
+        {
+          "name": "面料供应商",
+          "question": "是否有稳定供应商档案",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "面料供应商",
+            "是否有稳定供应商档案"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“面料供应商”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "面料质量",
+          "question": "是否经常出现色差、缩水、起球、掉色、克重不稳",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "面料质量",
+            "是否经常出现色差",
+            "缩水",
+            "起球",
+            "掉色",
+            "克重不稳"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“面料质量”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "辅料管理",
+          "question": "拉链、纽扣、里布、吊牌、包装等是否标准化",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "辅料管理",
+            "拉链",
+            "纽扣",
+            "里布",
+            "吊牌",
+            "包装等是否标准化"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“辅料管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "采购周期",
+          "question": "常用面料多久能到，新面料多久能到",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "采购周期",
+            "到货周期",
+            "交货周期",
+            "面料周期",
+            "常用面料多久能到",
+            "新面料多久能到"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“采购周期”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "价格控制",
+          "question": "同类面料是否有比价机制",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "价格控制",
+            "同类面料是否有比价机制"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“价格控制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "物料齐套",
+          "question": "开产前面辅料是否全部到齐",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "物料齐套",
+            "齐套率",
+            "物料到齐",
+            "开产齐套",
+            "开产前面辅料是否全部到齐"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“物料齐套”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "替代方案",
+          "question": "面料断货时是否有备选方案",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "替代方案",
+            "面料断货时是否有备选方案"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“替代方案”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "来料检验",
+          "question": "面辅料到仓是否有检验标准",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "来料检验",
+            "面辅料到仓是否有检验标准"
+          ],
+          "suggested_owner": "采购负责人",
+          "improvement_action": "由采购负责人建立“来料检验”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "面料准时到货率",
+          "meaning": "判断采购交付能力",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "采购负责人"
+        },
+        {
+          "name": "来料不良率",
+          "meaning": "判断供应商质量",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "采购负责人"
+        },
+        {
+          "name": "面料色差率",
+          "meaning": "判断品质风险",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "采购负责人"
+        },
+        {
+          "name": "采购成本波动",
+          "meaning": "判断成本控制",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "采购负责人"
+        },
+        {
+          "name": "物料齐套率",
+          "meaning": "判断生产开工稳定性",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "采购负责人"
+        }
+      ],
+      "missing_items": [
+        "面料供应商",
+        "面料质量",
+        "辅料管理",
+        "采购周期",
+        "价格控制",
+        "物料齐套",
+        "替代方案",
+        "来料检验"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S06_生产计划与排产诊断",
+      "number": 6,
+      "title": "生产计划与排产诊断",
+      "score": 12,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.12,
+      "metric_coverage": 0.12,
+      "finding": "生产计划与排产诊断资料明显不足，优先补齐订单排期、产能评估、交期承诺，否则难以判断真实经营问题。",
+      "intro": "生产不是“客户下单后马上催车间”，而是要有排产计划。",
+      "focus": "这一块重点看一个问题：",
+      "owner": "生产负责人",
+      "items": [
+        {
+          "name": "订单排期",
+          "question": "每个订单是否有生产排期表",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "订单排期",
+            "生产排期",
+            "排产计划",
+            "生产计划",
+            "每个订单是否有生产排期表"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“订单排期”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "产能评估",
+          "question": "接单前是否评估产能",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "产能评估",
+            "产能测算",
+            "产能确认",
+            "接单评估",
+            "接单前是否评估产能"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“产能评估”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "交期承诺",
+          "question": "销售承诺客户交期前是否确认生产能力",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "交期承诺"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“交期承诺”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "插单机制",
+          "question": "急单、返单、补单是否有插单规则",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "插单机制",
+            "急单",
+            "返单",
+            "补单是否有插单规则"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“插单机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "生产优先级",
+          "question": "哪些订单先做，谁说了算",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "生产优先级",
+            "哪些订单先做",
+            "谁说了算"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“生产优先级”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "延期预警",
+          "question": "交期风险是否提前预警",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "延期预警",
+            "交期预警",
+            "延期提醒",
+            "风险预警",
+            "交期风险是否提前预警"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“延期预警”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "产前准备",
+          "question": "面辅料、纸样、工艺单、样衣是否齐全",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "产前准备",
+            "面辅料",
+            "纸样",
+            "纸样编号",
+            "纸样归档",
+            "版型档案",
+            "工艺单",
+            "工艺资料",
+            "工艺说明",
+            "生产工艺单",
+            "样衣是否齐全"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“产前准备”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "部门协同",
+          "question": "销售、跟单、采购、车间是否信息同步",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。",
+            "销售团队有客户分层、报价记录、成交转化和复购跟进，但部门责任边界仍需明确。"
+          ],
+          "keywords": [
+            "部门协同",
+            "销售",
+            "跟单",
+            "生产跟单表",
+            "订单跟进表",
+            "进度表",
+            "采购",
+            "到货周期",
+            "交货周期",
+            "面料周期",
+            "车间是否信息同步"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“部门协同”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "订单排期",
+        "产能评估",
+        "交期承诺",
+        "插单机制",
+        "生产优先级",
+        "延期预警",
+        "产前准备"
+      ],
+      "evidence_count": 2
+    },
+    {
+      "id": "S07_生产车间诊断",
+      "number": 7,
+      "title": "生产车间诊断",
+      "score": 4,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.12,
+      "finding": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。",
+      "intro": "生产车间必须纳入诊断。它不是只看干净不干净，而是看效率、质量、秩序、异常和成本。",
+      "focus": "这一块解决的是：车间到底是高效生产，还是靠人硬干、靠催单推动。",
+      "owner": "生产负责人",
+      "items": [
+        {
+          "name": "车间布局",
+          "question": "裁剪、车缝、后整、包装流转是否顺畅",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "车间布局",
+            "裁剪",
+            "车缝",
+            "后整",
+            "包装流转是否顺畅"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“车间布局”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "工序安排",
+          "question": "工序是否平衡，有没有明显瓶颈",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工序安排",
+            "工序是否平衡",
+            "有没有明显瓶颈"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“工序安排”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "标准工时",
+          "question": "每个款、每道关键工序有没有标准工时",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "标准工时",
+            "工时标准",
+            "标准时间",
+            "工序工时",
+            "每个款"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“标准工时”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "日产能",
+          "question": "每条线每天能做多少件，是否有记录",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "日产能",
+            "每条线每天能做多少件",
+            "是否有记录"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“日产能”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "在制品",
+          "question": "半成品堆积在哪个环节",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "在制品",
+            "半成品堆积在哪个环节"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“在制品”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "返工情况",
+          "question": "哪些问题导致返工最多",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "返工情况",
+            "哪些问题导致返工最多"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“返工情况”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "员工熟练度",
+          "question": "熟手、新手、临时工比例如何",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "员工熟练度",
+            "熟手",
+            "新手",
+            "临时工比例如何"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“员工熟练度”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "计件工资",
+          "question": "计件是否激励效率，也是否导致质量问题",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "计件工资",
+            "计件是否激励效率",
+            "也是否导致质量问题"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“计件工资”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "设备情况",
+          "question": "机器是否经常故障，是否影响产能",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "设备情况",
+            "机器是否经常故障",
+            "是否影响产能"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“设备情况”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "现场管理",
+          "question": "裁片、半成品、成品、残次品是否区分清楚",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "现场管理",
+            "裁片",
+            "半成品",
+            "成品",
+            "残次品是否区分清楚"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“现场管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "异常处理",
+          "question": "发现问题后谁处理、多久处理、是否复盘",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "异常处理",
+            "发现问题后谁处理",
+            "多久处理",
+            "是否复盘"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“异常处理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "日产量",
+          "meaning": "判断车间产能",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "人均产量",
+          "meaning": "判断人效",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "标准工时达成率",
+          "meaning": "判断生产效率",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "返工率",
+          "meaning": "判断质量和工艺稳定性",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "生产延期率",
+          "meaning": "判断交付能力",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "在制品数量",
+          "meaning": "判断流程是否堵塞",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "设备故障次数",
+          "meaning": "判断设备保障",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        },
+        {
+          "name": "异常关闭时长",
+          "meaning": "判断管理响应速度",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "生产负责人"
+        }
+      ],
+      "missing_items": [
+        "车间布局",
+        "工序安排",
+        "标准工时",
+        "日产能",
+        "在制品",
+        "返工情况",
+        "员工熟练度",
+        "计件工资"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S08_工艺管理诊断",
+      "number": 8,
+      "title": "工艺管理诊断",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.0,
+      "finding": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+      "intro": "工艺管理决定一件衣服能不能被稳定做出来。",
+      "focus": "",
+      "owner": "工艺负责人",
+      "items": [
+        {
+          "name": "工艺单",
+          "question": "每个款是否有标准工艺单",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工艺单",
+            "工艺资料",
+            "工艺说明",
+            "生产工艺单",
+            "每个款是否有标准工艺单"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“工艺单”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "工艺说明",
+          "question": "关键部位做法是否清楚",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工艺说明",
+            "关键部位做法是否清楚"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“工艺说明”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "样衣对照",
+          "question": "车间是否按确认样生产",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "样衣对照",
+            "车间是否按确认样生产"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“样衣对照”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "产前会",
+          "question": "大货开做前是否开产前说明会",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "产前会"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“产前会”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "首件确认",
+          "question": "第一件大货是否经过确认",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "首件确认",
+            "首件检",
+            "首件样",
+            "首件审核",
+            "第一件大货是否经过确认"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“首件确认”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "工艺变更",
+          "question": "生产过程中改工艺是否有记录",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工艺变更"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“工艺变更”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "难点工序",
+          "question": "哪些工序最容易出错",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "难点工序",
+            "哪些工序最容易出错"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“难点工序”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "工艺培训",
+          "question": "新款开产前是否给车工讲解",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "工艺培训",
+            "新款开产前是否给车工讲解"
+          ],
+          "suggested_owner": "工艺负责人",
+          "improvement_action": "由工艺负责人建立“工艺培训”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "工艺单",
+        "工艺说明",
+        "样衣对照",
+        "产前会",
+        "首件确认",
+        "工艺变更",
+        "难点工序",
+        "工艺培训"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S09_质量管理诊断",
+      "number": 9,
+      "title": "质量管理诊断",
+      "score": 5,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.17,
+      "finding": "质量管理诊断资料明显不足，优先补齐来料检、裁剪检、首件检，否则难以判断真实经营问题。",
+      "intro": "质量诊断不能只看最终有没有次品，要看质量控制点有没有前置。",
+      "focus": "这一块解决的是：质量问题是偶发，还是系统性失控。",
+      "owner": "质检负责人",
+      "items": [
+        {
+          "name": "来料检",
+          "question": "面辅料进来有没有检查",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "来料检",
+            "面辅料进来有没有检查"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“来料检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "裁剪检",
+          "question": "裁片尺寸、方向、色差是否检查",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "裁剪检",
+            "裁片尺寸",
+            "方向",
+            "色差是否检查"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“裁剪检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "首件检",
+          "question": "第一件大货是否确认",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "首件检",
+            "第一件大货是否确认"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“首件检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "巡检",
+          "question": "生产过程中是否及时发现问题",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "巡检"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“巡检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "尾检",
+          "question": "成品是否逐批检查",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "尾检",
+            "成品是否逐批检查"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“尾检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "包装检",
+          "question": "吊牌、包装、尺码、颜色是否正确",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "包装检",
+            "吊牌",
+            "包装",
+            "尺码",
+            "尺码表",
+            "尺寸标准",
+            "版型标准",
+            "颜色是否正确"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“包装检”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客诉复盘",
+          "question": "客户投诉有没有分类、追责、改善",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "客诉复盘",
+            "客户投诉有没有分类",
+            "追责",
+            "改善"
+          ],
+          "suggested_owner": "质检负责人",
+          "improvement_action": "由质检负责人建立“客诉复盘”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "一次合格率",
+          "meaning": "判断生产稳定性",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "质检负责人"
+        },
+        {
+          "name": "返修率",
+          "meaning": "判断质量损耗",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "质检负责人"
+        },
+        {
+          "name": "客诉率",
+          "meaning": "判断客户体验",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "suggested_owner": "质检负责人"
+        },
+        {
+          "name": "退货率",
+          "meaning": "判断产品与质量问题",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "质检负责人"
+        },
+        {
+          "name": "质量异常次数",
+          "meaning": "判断管理风险",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "质检负责人"
+        },
+        {
+          "name": "同类问题重复率",
+          "meaning": "判断是否真正复盘",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "质检负责人"
+        }
+      ],
+      "missing_items": [
+        "来料检",
+        "裁剪检",
+        "首件检",
+        "巡检",
+        "尾检",
+        "包装检",
+        "客诉复盘"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S10_生产跟单与交付诊断",
+      "number": 10,
+      "title": "生产跟单与交付诊断",
+      "score": 71,
+      "risk": "low",
+      "risk_label": "低风险",
+      "coverage": 0.71,
+      "metric_coverage": 0.71,
+      "finding": "生产跟单与交付诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。",
+      "intro": "跟单是连接客户、销售、采购、车间、仓库的关键岗位。跟单弱，公司就会乱。",
+      "focus": "这一块解决的是：订单能不能被透明、稳定、准时地交付。",
+      "owner": "生产负责人",
+      "items": [
+        {
+          "name": "订单信息",
+          "question": "客户需求、数量、颜色、尺码、交期是否完整",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。"
+          ],
+          "keywords": [
+            "订单信息",
+            "订单资料",
+            "订单明细",
+            "客户需求",
+            "数量",
+            "颜色",
+            "尺码",
+            "尺码表",
+            "尺寸标准",
+            "版型标准",
+            "交期是否完整"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“订单信息”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "跟单表",
+          "question": "是否有统一生产跟单表",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。"
+          ],
+          "keywords": [
+            "跟单表",
+            "生产跟单表",
+            "订单跟进表",
+            "进度表",
+            "是否有统一生产跟单表"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“跟单表”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "进度更新",
+          "question": "每个订单进度是否每日更新",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。"
+          ],
+          "keywords": [
+            "进度更新",
+            "每日更新",
+            "进度同步",
+            "订单进度",
+            "每个订单进度是否每日更新"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“进度更新”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "异常记录",
+          "question": "缺料、返工、延期、质量问题是否记录",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。",
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "异常记录",
+            "缺料",
+            "返工",
+            "返修率",
+            "重工率",
+            "返工情况",
+            "延期",
+            "交期预警",
+            "延期提醒",
+            "风险预警",
+            "质量问题是否记录"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“异常记录”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客户通知",
+          "question": "延期或异常是否及时通知客户",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "客户通知"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“客户通知”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "内部协同",
+          "question": "销售、采购、车间、仓库是否同步",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "销售团队有客户分层、报价记录、成交转化和复购跟进，但部门责任边界仍需明确。"
+          ],
+          "keywords": [
+            "内部协同",
+            "销售",
+            "采购",
+            "到货周期",
+            "交货周期",
+            "面料周期",
+            "车间",
+            "仓库是否同步"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“内部协同”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "交付复盘",
+          "question": "延期订单是否复盘原因",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "交付复盘",
+            "延期订单是否复盘原因"
+          ],
+          "suggested_owner": "生产负责人",
+          "improvement_action": "由生产负责人建立“交付复盘”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "客户通知",
+        "交付复盘"
+      ],
+      "evidence_count": 6
+    },
+    {
+      "id": "S11_仓储与库存诊断",
+      "number": 11,
+      "title": "仓储与库存诊断",
+      "score": 19,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.12,
+      "metric_coverage": 0.33,
+      "finding": "仓储与库存诊断资料明显不足，优先补齐库位管理、入库流程、出库流程，否则难以判断真实经营问题。",
+      "intro": "仓库不是简单存货，而是资金、效率、准确率和客户体验的交汇点。",
+      "focus": "这一块解决的是：公司有没有被库存拖死。",
+      "owner": "仓库负责人",
+      "items": [
+        {
+          "name": "库位管理",
+          "question": "是否按款号、颜色、尺码、批次管理",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "库位管理",
+            "货位管理",
+            "仓位管理",
+            "库位编号",
+            "是否按款号",
+            "颜色",
+            "尺码",
+            "尺码表",
+            "尺寸标准",
+            "版型标准",
+            "批次管理"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“库位管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "库存准确",
+          "question": "系统库存和实际库存是否一致",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "库存准确",
+            "账实一致",
+            "库存准确率",
+            "盘点准确"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“库存准确”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "入库流程",
+          "question": "成品入库是否有检查和记录",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "入库流程",
+            "成品入库是否有检查和记录"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“入库流程”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "出库流程",
+          "question": "拣货、复核、打包、发货是否标准",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "出库流程",
+            "拣货",
+            "复核",
+            "打包",
+            "发货是否标准"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“出库流程”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "残次品管理",
+          "question": "残次品是否单独区分",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "残次品管理",
+            "残次品是否单独区分"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“残次品管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "退货管理",
+          "question": "客户退货是否检查、分类、入账",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "退货管理",
+            "客户退货是否检查",
+            "分类",
+            "入账"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“退货管理”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "滞销库存",
+          "question": "老款、断码、残次是否有清理机制",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "滞销库存",
+            "老款",
+            "断码",
+            "残次是否有清理机制"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“滞销库存”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "盘点机制",
+          "question": "多久盘点一次，差异怎么处理",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "盘点机制",
+            "多久盘点一次",
+            "差异怎么处理"
+          ],
+          "suggested_owner": "仓库负责人",
+          "improvement_action": "由仓库负责人建立“盘点机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "库存准确率",
+          "meaning": "判断仓库基础管理",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "suggested_owner": "仓库负责人"
+        },
+        {
+          "name": "发货及时率",
+          "meaning": "判断履约效率",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "suggested_owner": "仓库负责人"
+        },
+        {
+          "name": "错发漏发率",
+          "meaning": "判断操作质量",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "仓库负责人"
+        },
+        {
+          "name": "退货处理时长",
+          "meaning": "判断售后效率",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "仓库负责人"
+        },
+        {
+          "name": "滞销库存金额",
+          "meaning": "判断资金占用",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "仓库负责人"
+        },
+        {
+          "name": "库存周转天数",
+          "meaning": "判断资金效率",
+          "status": "missing",
+          "status_label": "缺少数据",
+          "evidence": [],
+          "suggested_owner": "仓库负责人"
+        }
+      ],
+      "missing_items": [
+        "库位管理",
+        "入库流程",
+        "出库流程",
+        "残次品管理",
+        "退货管理",
+        "滞销库存",
+        "盘点机制"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "id": "S12_销售与客户管理诊断",
+      "number": 12,
+      "title": "销售与客户管理诊断",
+      "score": 33,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.33,
+      "metric_coverage": 0.33,
+      "finding": "销售与客户管理诊断资料明显不足，优先补齐客户来源、推荐逻辑、跟进记录，否则难以判断真实经营问题。",
+      "intro": "这部分保留，但要和后端打通。",
+      "focus": "",
+      "owner": "销售负责人",
+      "items": [
+        {
+          "name": "客户来源",
+          "question": "客户从哪里来",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "客户来源",
+            "线索来源",
+            "获客渠道",
+            "客户渠道",
+            "客户从哪里来"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“客户来源”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客户分层",
+          "question": "是否区分 A/B/C/D 客户",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。",
+            "销售团队有客户分层、报价记录、成交转化和复购跟进，但部门责任边界仍需明确。"
+          ],
+          "keywords": [
+            "客户分层",
+            "客户等级",
+            "ABC客户",
+            "客户分类",
+            "是否区分",
+            "客户",
+            "目标客户",
+            "客户类型",
+            "客户群体",
+            "客户画像",
+            "线索来源",
+            "获客渠道",
+            "客户渠道"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“客户分层”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客户需求",
+          "question": "销售是否清楚客户风格、价格带、采购频率",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。"
+          ],
+          "keywords": [
+            "客户需求",
+            "销售是否清楚客户风格",
+            "价格带",
+            "价格区间",
+            "价格梯度",
+            "引流款",
+            "利润款",
+            "采购频率"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“客户需求”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "推荐逻辑",
+          "question": "销售推荐产品是靠感觉，还是基于客户画像和货盘",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "推荐逻辑",
+            "销售推荐产品是靠感觉",
+            "还是基于客户画像和货盘"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“推荐逻辑”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "跟进记录",
+          "question": "是否记录每次沟通",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "跟进记录",
+            "沟通记录",
+            "客户跟进",
+            "拜访记录",
+            "是否记录每次沟通"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“跟进记录”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "报价体系",
+          "question": "价格是否统一，有没有乱报价",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "报价体系",
+            "价格是否统一",
+            "有没有乱报价"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“报价体系”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "样衣推进",
+          "question": "寄样、看样、反馈、成交是否有 SOP",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "样衣推进",
+            "寄样",
+            "看样",
+            "反馈",
+            "成交是否有",
+            "SOP"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“样衣推进”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "复购机制",
+          "question": "老客户是否定期激活",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "复购机制",
+            "老客户是否定期激活"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“复购机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客诉反馈",
+          "question": "客户反馈是否传回研发、板房、生产、质量",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。"
+          ],
+          "keywords": [
+            "客诉反馈",
+            "客户反馈是否传回研发",
+            "板房",
+            "生产",
+            "质量"
+          ],
+          "suggested_owner": "销售负责人",
+          "improvement_action": "由销售负责人建立“客诉反馈”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "客户来源",
+        "推荐逻辑",
+        "跟进记录",
+        "报价体系",
+        "样衣推进",
+        "复购机制"
+      ],
+      "evidence_count": 4
+    },
+    {
+      "id": "S13_招商与渠道诊断",
+      "number": 13,
+      "title": "招商与渠道诊断",
+      "score": 29,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.29,
+      "metric_coverage": 0.29,
+      "finding": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。",
+      "intro": "供应链公司、品牌公司、档口、工厂都需要招商诊断，但招商不能只看话术。",
+      "focus": "这一块解决的是：客户为什么要跟你合作，而不是跟别人合作。",
+      "owner": "招商负责人",
+      "items": [
+        {
+          "name": "招商对象",
+          "question": "招直播客户、门店客户、电商客户、加盟商，还是批发客户",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "招商对象",
+            "招直播客户",
+            "门店客户",
+            "电商客户",
+            "加盟商",
+            "还是批发客户"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“招商对象”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "招商资料",
+          "question": "公司优势、产品优势、供应链优势是否讲清楚",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "招商资料",
+            "公司优势",
+            "产品优势",
+            "供应链优势是否讲清楚"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“招商资料”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "样衣展示",
+          "question": "样衣间、展厅、货盘是否能打动客户",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "样衣展示",
+            "样衣间",
+            "展厅",
+            "货盘是否能打动客户"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“样衣展示”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "合作政策",
+          "question": "起订量、价格、换货、补货、账期是否清楚",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "公司已有季度商品企划、品类结构、价格带、上新节奏和爆款复盘。"
+          ],
+          "keywords": [
+            "合作政策",
+            "起订量",
+            "价格",
+            "价格区间",
+            "价格梯度",
+            "引流款",
+            "利润款",
+            "换货",
+            "补货",
+            "账期是否清楚"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“合作政策”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "招商漏斗",
+          "question": "线索、沟通、看样、成交、回款是否有数据",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "销售团队有客户分层、报价记录、成交转化和复购跟进，但部门责任边界仍需明确。"
+          ],
+          "keywords": [
+            "招商漏斗",
+            "销售漏斗",
+            "转化漏斗",
+            "线索转化",
+            "线索",
+            "沟通",
+            "看样",
+            "成交",
+            "回款是否有数据"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“招商漏斗”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "成交 SOP",
+          "question": "从咨询到成交是否有标准流程",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "成交 SOP"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“成交 SOP”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "客户案例",
+          "question": "是否有合作案例、爆款案例、供货案例",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "客户案例",
+            "是否有合作案例",
+            "爆款案例",
+            "供货案例"
+          ],
+          "suggested_owner": "招商负责人",
+          "improvement_action": "由招商负责人建立“客户案例”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "招商对象",
+        "招商资料",
+        "样衣展示",
+        "成交 SOP",
+        "客户案例"
+      ],
+      "evidence_count": 2
+    },
+    {
+      "id": "S14_线上内容与视觉诊断",
+      "number": 14,
+      "title": "线上内容与视觉诊断",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.0,
+      "metric_coverage": 0.0,
+      "finding": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。",
+      "intro": "线上内容不能单独诊断“拍得好不好”，要看是否服务经营。",
+      "focus": "这一块解决的是：线上内容有没有成为销售和招商的工具。",
+      "owner": "运营负责人",
+      "items": [
+        {
+          "name": "图片资料",
+          "question": "产品图、细节图、面料图、上身图是否完整",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "图片资料",
+            "产品图",
+            "细节图",
+            "上身图",
+            "素材",
+            "面料图",
+            "上身图是否完整"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“图片资料”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "视频内容",
+          "question": "是否展示产品、工厂、车间、样衣、客户案例",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "视频内容",
+            "短视频",
+            "直播素材",
+            "内容素材",
+            "是否展示产品",
+            "工厂",
+            "车间",
+            "样衣",
+            "样衣档案",
+            "样衣编号",
+            "样衣记录",
+            "客户案例"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“视频内容”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "账号定位",
+          "question": "是招商号、产品号、老板号、工厂号，还是混乱发布",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "账号定位",
+            "是招商号",
+            "产品号",
+            "老板号",
+            "工厂号",
+            "还是混乱发布"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“账号定位”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "内容栏目",
+          "question": "是否有固定栏目",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "内容栏目",
+            "是否有固定栏目"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“内容栏目”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "直播看款",
+          "question": "是否能服务客户远程看款和招商",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "直播看款"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“直播看款”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "素材库",
+          "question": "车间、板房、样衣、面料、发货是否有素材沉淀",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "素材库",
+            "车间",
+            "板房",
+            "样衣",
+            "样衣档案",
+            "样衣编号",
+            "样衣记录",
+            "面料",
+            "发货是否有素材沉淀"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“素材库”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "转化链路",
+          "question": "客户看完内容后如何咨询、如何承接、如何成交",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "转化链路",
+            "客户看完内容后如何咨询",
+            "如何承接",
+            "如何成交"
+          ],
+          "suggested_owner": "运营负责人",
+          "improvement_action": "由运营负责人建立“转化链路”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "图片资料",
+        "视频内容",
+        "账号定位",
+        "内容栏目",
+        "直播看款",
+        "素材库",
+        "转化链路"
+      ],
+      "evidence_count": 0
+    },
+    {
+      "id": "S15_财务_成本与利润诊断",
+      "number": 15,
+      "title": "财务、成本与利润诊断",
+      "score": 43,
+      "risk": "medium",
+      "risk_label": "中风险",
+      "coverage": 0.43,
+      "metric_coverage": 0.43,
+      "finding": "财务、成本与利润诊断资料明显不足，优先补齐单款成本、费用结构、库存占用，否则难以判断真实经营问题。",
+      "intro": "很多服装公司销售额不低，但利润很薄，根因在成本没算清。",
+      "focus": "这一块解决的是：公司到底是真赚钱，还是只是在周转。",
+      "owner": "财务负责人",
+      "items": [
+        {
+          "name": "单款成本",
+          "question": "面料、辅料、加工、包装、物流、人工是否算清",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "单款成本",
+            "款式成本",
+            "成本核算",
+            "成本表",
+            "面料",
+            "辅料",
+            "加工",
+            "包装",
+            "物流",
+            "人工是否算清"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“单款成本”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "毛利核算",
+          "question": "每个款、每个客户、每个渠道毛利是否清楚",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "毛利核算",
+            "毛利率",
+            "单款毛利",
+            "利润核算",
+            "每个款",
+            "每个客户",
+            "每个渠道毛利是否清楚"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“毛利核算”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "费用结构",
+          "question": "人工、房租、拍摄、运营、售后、返工费用是否统计",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "费用结构",
+            "人工",
+            "房租",
+            "拍摄",
+            "运营",
+            "售后",
+            "返工费用是否统计"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“费用结构”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "应收账款",
+          "question": "客户欠款多少，账期多长，风险客户是谁",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "应收账款",
+            "欠款",
+            "账期",
+            "回款",
+            "应收",
+            "客户欠款多少",
+            "账期多长",
+            "风险客户是谁"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“应收账款”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "库存占用",
+          "question": "库存占用多少现金",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "库存占用",
+            "库存占用多少现金"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“库存占用”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "返工损耗",
+          "question": "返工、残次、退货损失是否统计",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "订单信息每日更新，跟单表记录延期、返工、质量异常和客户客诉。",
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "返工损耗",
+            "返工",
+            "返修率",
+            "重工率",
+            "返工情况",
+            "残次",
+            "退货损失是否统计"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“返工损耗”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "报价逻辑",
+          "question": "报价是否基于成本和利润，而不是老板经验",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "报价逻辑",
+            "报价是否基于成本和利润",
+            "而不是老板经验"
+          ],
+          "suggested_owner": "财务负责人",
+          "improvement_action": "由财务负责人建立“报价逻辑”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "单款成本",
+        "费用结构",
+        "库存占用",
+        "报价逻辑"
+      ],
+      "evidence_count": 4
+    },
+    {
+      "id": "S16_组织_绩效与数据系统诊断",
+      "number": 16,
+      "title": "组织、绩效与数据系统诊断",
+      "score": 25,
+      "risk": "high",
+      "risk_label": "高风险",
+      "coverage": 0.25,
+      "metric_coverage": 0.25,
+      "finding": "组织、绩效与数据系统诊断资料明显不足，优先补齐岗位职责、权责边界、会议机制，否则难以判断真实经营问题。",
+      "intro": "最后看公司是否有系统支撑。",
+      "focus": "这一块解决的是：公司能不能从老板经验驱动，转向系统、数据、团队驱动。",
+      "owner": "总经理/人事负责人",
+      "items": [
+        {
+          "name": "岗位职责",
+          "question": "每个岗位职责是否清楚",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "岗位职责",
+            "岗位说明",
+            "职责边界",
+            "岗位分工",
+            "每个岗位职责是否清楚"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“岗位职责”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "权责边界",
+          "question": "谁定款、谁定价、谁接单、谁排产、谁处理异常",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "权责边界",
+            "谁定款",
+            "谁定价",
+            "谁接单",
+            "谁排产",
+            "谁处理异常"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“权责边界”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "会议机制",
+          "question": "有没有日会、周会、月度经营会",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "会议机制",
+            "有没有日会",
+            "周会",
+            "月度经营会"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“会议机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "汇报机制",
+          "question": "每个部门每天、每周、每月报什么",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "汇报机制",
+            "每个部门每天",
+            "每周",
+            "每月报什么"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“汇报机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "绩效机制",
+          "question": "是否考核结果，也考核过程",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "绩效机制",
+            "绩效考核",
+            "KPI",
+            "考核机制",
+            "是否考核结果",
+            "也考核过程"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“绩效机制”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "数据工具",
+          "question": "是否使用 ERP、Excel、CRM、飞书、企微等",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "数据工具",
+            "ERP",
+            "CRM",
+            "Excel",
+            "飞书",
+            "企微",
+            "系统",
+            "是否使用",
+            "企微等"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“数据工具”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "数据准确",
+          "question": "数据是否及时、准确、有人负责",
+          "status": "covered",
+          "status_label": "已有证据",
+          "evidence": [
+            "库存准确率、发货及时率、返工率、客诉率、毛利率、应收账款和现金流需要每周复盘。"
+          ],
+          "keywords": [
+            "数据准确",
+            "数据口径",
+            "数据及时",
+            "数据质量",
+            "数据是否及时",
+            "准确",
+            "账实一致",
+            "库存准确率",
+            "盘点准确",
+            "有人负责"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“数据准确”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "name": "老板依赖",
+          "question": "哪些事老板不盯就停摆",
+          "status": "missing",
+          "status_label": "缺少资料",
+          "evidence": [],
+          "keywords": [
+            "老板依赖",
+            "哪些事老板不盯就停摆"
+          ],
+          "suggested_owner": "总经理/人事负责人",
+          "improvement_action": "由总经理/人事负责人建立“老板依赖”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "metrics": [],
+      "missing_items": [
+        "岗位职责",
+        "权责边界",
+        "会议机制",
+        "绩效机制",
+        "数据工具",
+        "老板依赖"
+      ],
+      "evidence_count": 2
+    }
+  ],
+  "main_lines": [
+    {
+      "id": "goods",
+      "name": "货的主线",
+      "question": "货有没有问题？",
+      "description": "商品企划、研发、版型、样衣、面辅料、生产、质量是否顺畅。",
+      "score": 18,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "货的主线证据不足，应先补齐季度企划、款式来源、研发方向。",
+      "linked_sections": [
+        {
+          "number": 2,
+          "title": "商品企划诊断",
+          "score": 57,
+          "risk_label": "中风险"
+        },
+        {
+          "number": 3,
+          "title": "设计研发诊断",
+          "score": 10,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 4,
+          "title": "板房 / 版型 / 样衣诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 5,
+          "title": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 6,
+          "title": "生产计划与排产诊断",
+          "score": 12,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 7,
+          "title": "生产车间诊断",
+          "score": 4,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 8,
+          "title": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 9,
+          "title": "质量管理诊断",
+          "score": 5,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 10,
+          "title": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险"
+        },
+        {
+          "number": 11,
+          "title": "仓储与库存诊断",
+          "score": 19,
+          "risk_label": "高风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "板房 / 版型 / 样衣诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产车间诊断",
+          "score": 4,
+          "risk_label": "高风险",
+          "finding": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。"
+        }
+      ],
+      "next_actions": [
+        "先补齐板房 / 版型 / 样衣诊断的责任人、数据模板和复盘节奏。",
+        "先补齐面辅料与采购诊断的责任人、数据模板和复盘节奏。",
+        "先补齐工艺管理诊断的责任人、数据模板和复盘节奏。"
+      ]
+    },
+    {
+      "id": "customer",
+      "name": "客的主线",
+      "question": "客有没有问题？",
+      "description": "客户来源、销售跟进、招商成交、老客复购是否成体系。",
+      "score": 33,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "客的主线证据不足，应先补齐客户通知、交付复盘、客户来源。",
+      "linked_sections": [
+        {
+          "number": 10,
+          "title": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险"
+        },
+        {
+          "number": 12,
+          "title": "销售与客户管理诊断",
+          "score": 33,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 13,
+          "title": "招商与渠道诊断",
+          "score": 29,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 14,
+          "title": "线上内容与视觉诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "线上内容与视觉诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "招商与渠道诊断",
+          "score": 29,
+          "risk_label": "高风险",
+          "finding": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "销售与客户管理诊断",
+          "score": 33,
+          "risk_label": "高风险",
+          "finding": "销售与客户管理诊断资料明显不足，优先补齐客户来源、推荐逻辑、跟进记录，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险",
+          "finding": "生产跟单与交付诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。"
+        }
+      ],
+      "next_actions": [
+        "先补齐线上内容与视觉诊断的责任人、数据模板和复盘节奏。",
+        "先补齐招商与渠道诊断的责任人、数据模板和复盘节奏。",
+        "先补齐销售与客户管理诊断的责任人、数据模板和复盘节奏。"
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "交付的主线",
+      "question": "交付有没有问题？",
+      "description": "订单、排产、跟单、车间、质检、发货是否可控。",
+      "score": 16,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "交付的主线证据不足，应先补齐面料供应商、面料质量、订单排期。",
+      "linked_sections": [
+        {
+          "number": 5,
+          "title": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 6,
+          "title": "生产计划与排产诊断",
+          "score": 12,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 7,
+          "title": "生产车间诊断",
+          "score": 4,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 8,
+          "title": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 9,
+          "title": "质量管理诊断",
+          "score": 5,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 10,
+          "title": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险"
+        },
+        {
+          "number": 11,
+          "title": "仓储与库存诊断",
+          "score": 19,
+          "risk_label": "高风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产车间诊断",
+          "score": 4,
+          "risk_label": "高风险",
+          "finding": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "质量管理诊断",
+          "score": 5,
+          "risk_label": "高风险",
+          "finding": "质量管理诊断资料明显不足，优先补齐来料检、裁剪检、首件检，否则难以判断真实经营问题。"
+        }
+      ],
+      "next_actions": [
+        "先补齐面辅料与采购诊断的责任人、数据模板和复盘节奏。",
+        "先补齐工艺管理诊断的责任人、数据模板和复盘节奏。",
+        "先补齐生产车间诊断的责任人、数据模板和复盘节奏。"
+      ]
+    },
+    {
+      "id": "money",
+      "name": "钱的主线",
+      "question": "钱有没有问题？",
+      "description": "成本、毛利、库存、应收、现金流、费用是否清楚。",
+      "score": 16,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "钱的主线证据不足，应先补齐公司定位、核心客户、面料供应商。",
+      "linked_sections": [
+        {
+          "number": 1,
+          "title": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 5,
+          "title": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 11,
+          "title": "仓储与库存诊断",
+          "score": 19,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 15,
+          "title": "财务、成本与利润诊断",
+          "score": 43,
+          "risk_label": "中风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "仓储与库存诊断",
+          "score": 19,
+          "risk_label": "高风险",
+          "finding": "仓储与库存诊断资料明显不足，优先补齐库位管理、入库流程、出库流程，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "财务、成本与利润诊断",
+          "score": 43,
+          "risk_label": "中风险",
+          "finding": "财务、成本与利润诊断资料明显不足，优先补齐单款成本、费用结构、库存占用，否则难以判断真实经营问题。"
+        }
+      ],
+      "next_actions": [
+        "先补齐公司战略与商业模式诊断的责任人、数据模板和复盘节奏。",
+        "先补齐面辅料与采购诊断的责任人、数据模板和复盘节奏。",
+        "先补齐仓储与库存诊断的责任人、数据模板和复盘节奏。"
+      ]
+    },
+    {
+      "id": "people",
+      "name": "人的主线",
+      "question": "人有没有问题？",
+      "description": "岗位、权责、绩效、会议、协同是否清楚。",
+      "score": 27,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "人的主线证据不足，应先补齐公司定位、核心客户、订单排期。",
+      "linked_sections": [
+        {
+          "number": 1,
+          "title": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 6,
+          "title": "生产计划与排产诊断",
+          "score": 12,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 10,
+          "title": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险"
+        },
+        {
+          "number": 16,
+          "title": "组织、绩效与数据系统诊断",
+          "score": 25,
+          "risk_label": "高风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产计划与排产诊断",
+          "score": 12,
+          "risk_label": "高风险",
+          "finding": "生产计划与排产诊断资料明显不足，优先补齐订单排期、产能评估、交期承诺，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "组织、绩效与数据系统诊断",
+          "score": 25,
+          "risk_label": "高风险",
+          "finding": "组织、绩效与数据系统诊断资料明显不足，优先补齐岗位职责、权责边界、会议机制，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险",
+          "finding": "生产跟单与交付诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。"
+        }
+      ],
+      "next_actions": [
+        "先补齐公司战略与商业模式诊断的责任人、数据模板和复盘节奏。",
+        "先补齐生产计划与排产诊断的责任人、数据模板和复盘节奏。",
+        "先补齐组织、绩效与数据系统诊断的责任人、数据模板和复盘节奏。"
+      ]
+    },
+    {
+      "id": "data",
+      "name": "数据的主线",
+      "question": "数据有没有问题？",
+      "description": "关键数据有没有、准不准、谁负责、有没有用于决策。",
+      "score": 19,
+      "risk": "high",
+      "risk_label": "高风险",
+      "judgment": "数据的主线证据不足，应先补齐公司定位、核心客户、季度企划。",
+      "linked_sections": [
+        {
+          "number": 1,
+          "title": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 2,
+          "title": "商品企划诊断",
+          "score": 57,
+          "risk_label": "中风险"
+        },
+        {
+          "number": 3,
+          "title": "设计研发诊断",
+          "score": 10,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 4,
+          "title": "板房 / 版型 / 样衣诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 5,
+          "title": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 6,
+          "title": "生产计划与排产诊断",
+          "score": 12,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 7,
+          "title": "生产车间诊断",
+          "score": 4,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 8,
+          "title": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 9,
+          "title": "质量管理诊断",
+          "score": 5,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 10,
+          "title": "生产跟单与交付诊断",
+          "score": 71,
+          "risk_label": "低风险"
+        },
+        {
+          "number": 11,
+          "title": "仓储与库存诊断",
+          "score": 19,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 12,
+          "title": "销售与客户管理诊断",
+          "score": 33,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 13,
+          "title": "招商与渠道诊断",
+          "score": 29,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 14,
+          "title": "线上内容与视觉诊断",
+          "score": 0,
+          "risk_label": "高风险"
+        },
+        {
+          "number": 15,
+          "title": "财务、成本与利润诊断",
+          "score": 43,
+          "risk_label": "中风险"
+        },
+        {
+          "number": 16,
+          "title": "组织、绩效与数据系统诊断",
+          "score": 25,
+          "risk_label": "高风险"
+        }
+      ],
+      "key_risks": [
+        {
+          "section": "公司战略与商业模式诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "板房 / 版型 / 样衣诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "面辅料与采购诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "score": 0,
+          "risk_label": "高风险",
+          "finding": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。"
+        }
+      ],
+      "next_actions": [
+        "先补齐公司战略与商业模式诊断的责任人、数据模板和复盘节奏。",
+        "先补齐板房 / 版型 / 样衣诊断的责任人、数据模板和复盘节奏。",
+        "先补齐面辅料与采购诊断的责任人、数据模板和复盘节奏。"
+      ]
+    }
+  ],
+  "flow_charts": [
+    {
+      "name": "商品开发流程",
+      "content": "企划 → 设计 → 打版 → 样衣 → 审版 → 成本 → 上新",
+      "steps": [
+        "企划",
+        "设计",
+        "打版",
+        "样衣",
+        "审版",
+        "成本",
+        "上新"
+      ],
+      "score": 13,
+      "risk": "high",
+      "risk_label": "高风险",
+      "weak_points": [
+        {
+          "section": "板房 / 版型 / 样衣诊断",
+          "risk_label": "高风险",
+          "score": 0,
+          "finding": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "面辅料与采购诊断",
+          "risk_label": "高风险",
+          "score": 0,
+          "finding": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "risk_label": "高风险",
+          "score": 0,
+          "finding": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。"
+        }
+      ],
+      "improvement_focus": "板房 / 版型 / 样衣诊断；面辅料与采购诊断；工艺管理诊断"
+    },
+    {
+      "name": "订单交付流程",
+      "content": "客户下单 → 跟单 → 采购 → 排产 → 生产 → 质检 → 发货",
+      "steps": [
+        "客户下单",
+        "跟单",
+        "采购",
+        "排产",
+        "生产",
+        "质检",
+        "发货"
+      ],
+      "score": 22,
+      "risk": "high",
+      "risk_label": "高风险",
+      "weak_points": [
+        {
+          "section": "生产车间诊断",
+          "risk_label": "高风险",
+          "score": 4,
+          "finding": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "质量管理诊断",
+          "risk_label": "高风险",
+          "score": 5,
+          "finding": "质量管理诊断资料明显不足，优先补齐来料检、裁剪检、首件检，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产计划与排产诊断",
+          "risk_label": "高风险",
+          "score": 12,
+          "finding": "生产计划与排产诊断资料明显不足，优先补齐订单排期、产能评估、交期承诺，否则难以判断真实经营问题。"
+        }
+      ],
+      "improvement_focus": "生产车间诊断；质量管理诊断；生产计划与排产诊断"
+    },
+    {
+      "name": "客户成交流程",
+      "content": "线索 → 沟通 → 推荐 → 报价 → 看样 → 成交 → 复购",
+      "steps": [
+        "线索",
+        "沟通",
+        "推荐",
+        "报价",
+        "看样",
+        "成交",
+        "复购"
+      ],
+      "score": 21,
+      "risk": "high",
+      "risk_label": "高风险",
+      "weak_points": [
+        {
+          "section": "线上内容与视觉诊断",
+          "risk_label": "高风险",
+          "score": 0,
+          "finding": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "招商与渠道诊断",
+          "risk_label": "高风险",
+          "score": 29,
+          "finding": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "销售与客户管理诊断",
+          "risk_label": "高风险",
+          "score": 33,
+          "finding": "销售与客户管理诊断资料明显不足，优先补齐客户来源、推荐逻辑、跟进记录，否则难以判断真实经营问题。"
+        }
+      ],
+      "improvement_focus": "线上内容与视觉诊断；招商与渠道诊断；销售与客户管理诊断"
+    },
+    {
+      "name": "异常处理流程",
+      "content": "发现问题 → 责任人 → 处理方案 → 客户沟通 → 复盘归档",
+      "steps": [
+        "发现问题",
+        "责任人",
+        "处理方案",
+        "客户沟通",
+        "复盘归档"
+      ],
+      "score": 34,
+      "risk": "high",
+      "risk_label": "高风险",
+      "weak_points": [
+        {
+          "section": "质量管理诊断",
+          "risk_label": "高风险",
+          "score": 5,
+          "finding": "质量管理诊断资料明显不足，优先补齐来料检、裁剪检、首件检，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "组织、绩效与数据系统诊断",
+          "risk_label": "高风险",
+          "score": 25,
+          "finding": "组织、绩效与数据系统诊断资料明显不足，优先补齐岗位职责、权责边界、会议机制，否则难以判断真实经营问题。"
+        },
+        {
+          "section": "生产跟单与交付诊断",
+          "risk_label": "低风险",
+          "score": 71,
+          "finding": "生产跟单与交付诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。"
+        }
+      ],
+      "improvement_focus": "质量管理诊断；组织、绩效与数据系统诊断；生产跟单与交付诊断"
+    }
+  ],
+  "department_issues": [
+    {
+      "department": "老板",
+      "owner": "总经理",
+      "score": 12,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "公司战略与商业模式诊断",
+        "组织、绩效与数据系统诊断"
+      ],
+      "missing_items": [
+        "公司定位",
+        "核心客户",
+        "盈利模式",
+        "竞争优势",
+        "岗位职责",
+        "权责边界",
+        "会议机制",
+        "绩效机制"
+      ],
+      "issue_count": 2,
+      "evidence_count": 2,
+      "issues": [
+        {
+          "section": "公司战略与商业模式诊断",
+          "risk_label": "高风险",
+          "problem": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+          "owner": "总经理",
+          "action": "由总经理建立“公司战略与商业模式诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "组织、绩效与数据系统诊断",
+          "risk_label": "高风险",
+          "problem": "组织、绩效与数据系统诊断资料明显不足，优先补齐岗位职责、权责边界、会议机制，否则难以判断真实经营问题。",
+          "owner": "总经理",
+          "action": "由总经理建立“组织、绩效与数据系统诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由总经理牵头补齐公司定位、核心客户、盈利模式，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "商品",
+      "owner": "商品负责人",
+      "score": 57,
+      "risk": "medium",
+      "risk_label": "中风险",
+      "linked_sections": [
+        "商品企划诊断"
+      ],
+      "missing_items": [
+        "季度企划",
+        "款式来源",
+        "滞销复盘"
+      ],
+      "issue_count": 1,
+      "evidence_count": 5,
+      "issues": [
+        {
+          "section": "商品企划诊断",
+          "risk_label": "中风险",
+          "problem": "商品企划诊断已有部分信息，但仍缺少可复盘、可追踪的数据闭环。",
+          "owner": "商品负责人",
+          "action": "由商品负责人建立“商品企划诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由商品负责人牵头补齐季度企划、款式来源、滞销复盘，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "设计",
+      "owner": "设计研发负责人",
+      "score": 10,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "设计研发诊断"
+      ],
+      "missing_items": [
+        "研发方向",
+        "款式开发计划",
+        "设计资料",
+        "开发命中率"
+      ],
+      "issue_count": 1,
+      "evidence_count": 2,
+      "issues": [
+        {
+          "section": "设计研发诊断",
+          "risk_label": "高风险",
+          "problem": "设计研发诊断资料明显不足，优先补齐研发方向、款式开发计划、设计资料，否则难以判断真实经营问题。",
+          "owner": "设计研发负责人",
+          "action": "由设计研发负责人建立“设计研发诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由设计研发负责人牵头补齐研发方向、款式开发计划、设计资料，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "板房",
+      "owner": "板房负责人",
+      "score": 16,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "板房 / 版型 / 样衣诊断",
+        "工艺管理诊断",
+        "销售与客户管理诊断",
+        "招商与渠道诊断"
+      ],
+      "missing_items": [
+        "打版需求单",
+        "纸样管理",
+        "样衣管理",
+        "试版流程",
+        "工艺单",
+        "工艺说明",
+        "样衣对照",
+        "产前会"
+      ],
+      "issue_count": 4,
+      "evidence_count": 6,
+      "issues": [
+        {
+          "section": "板房 / 版型 / 样衣诊断",
+          "risk_label": "高风险",
+          "problem": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。",
+          "owner": "板房负责人",
+          "action": "由板房负责人建立“板房 / 版型 / 样衣诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "risk_label": "高风险",
+          "problem": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+          "owner": "板房负责人",
+          "action": "由板房负责人建立“工艺管理诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "销售与客户管理诊断",
+          "risk_label": "高风险",
+          "problem": "销售与客户管理诊断资料明显不足，优先补齐客户来源、推荐逻辑、跟进记录，否则难以判断真实经营问题。",
+          "owner": "板房负责人",
+          "action": "由板房负责人建立“销售与客户管理诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "招商与渠道诊断",
+          "risk_label": "高风险",
+          "problem": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。",
+          "owner": "板房负责人",
+          "action": "由板房负责人建立“招商与渠道诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由板房负责人牵头补齐打版需求单、纸样管理、样衣管理，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "采购",
+      "owner": "采购负责人",
+      "score": 0,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "面辅料与采购诊断"
+      ],
+      "missing_items": [
+        "面料供应商",
+        "面料质量",
+        "辅料管理",
+        "采购周期"
+      ],
+      "issue_count": 1,
+      "evidence_count": 0,
+      "issues": [
+        {
+          "section": "面辅料与采购诊断",
+          "risk_label": "高风险",
+          "problem": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+          "owner": "采购负责人",
+          "action": "由采购负责人建立“面辅料与采购诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由采购负责人牵头补齐面料供应商、面料质量、辅料管理，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "跟单",
+      "owner": "跟单负责人",
+      "score": 71,
+      "risk": "low",
+      "risk_label": "低风险",
+      "linked_sections": [
+        "生产跟单与交付诊断"
+      ],
+      "missing_items": [
+        "客户通知",
+        "交付复盘"
+      ],
+      "issue_count": 0,
+      "evidence_count": 6,
+      "issues": [],
+      "next_action": "由跟单负责人牵头补齐客户通知、交付复盘，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "车间",
+      "owner": "车间主管",
+      "score": 22,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "生产计划与排产诊断",
+        "生产车间诊断",
+        "工艺管理诊断",
+        "生产跟单与交付诊断"
+      ],
+      "missing_items": [
+        "订单排期",
+        "产能评估",
+        "交期承诺",
+        "插单机制",
+        "车间布局",
+        "工序安排",
+        "标准工时",
+        "日产能"
+      ],
+      "issue_count": 3,
+      "evidence_count": 8,
+      "issues": [
+        {
+          "section": "生产计划与排产诊断",
+          "risk_label": "高风险",
+          "problem": "生产计划与排产诊断资料明显不足，优先补齐订单排期、产能评估、交期承诺，否则难以判断真实经营问题。",
+          "owner": "车间主管",
+          "action": "由车间主管建立“生产计划与排产诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "生产车间诊断",
+          "risk_label": "高风险",
+          "problem": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。",
+          "owner": "车间主管",
+          "action": "由车间主管建立“生产车间诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "工艺管理诊断",
+          "risk_label": "高风险",
+          "problem": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+          "owner": "车间主管",
+          "action": "由车间主管建立“工艺管理诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由车间主管牵头补齐订单排期、产能评估、交期承诺，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "质检",
+      "owner": "质检负责人",
+      "score": 2,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "面辅料与采购诊断",
+        "质量管理诊断"
+      ],
+      "missing_items": [
+        "面料供应商",
+        "面料质量",
+        "辅料管理",
+        "采购周期",
+        "来料检",
+        "裁剪检",
+        "首件检",
+        "巡检"
+      ],
+      "issue_count": 2,
+      "evidence_count": 0,
+      "issues": [
+        {
+          "section": "面辅料与采购诊断",
+          "risk_label": "高风险",
+          "problem": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+          "owner": "质检负责人",
+          "action": "由质检负责人建立“面辅料与采购诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "质量管理诊断",
+          "risk_label": "高风险",
+          "problem": "质量管理诊断资料明显不足，优先补齐来料检、裁剪检、首件检，否则难以判断真实经营问题。",
+          "owner": "质检负责人",
+          "action": "由质检负责人建立“质量管理诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由质检负责人牵头补齐面料供应商、面料质量、辅料管理，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "仓库",
+      "owner": "仓库负责人",
+      "score": 31,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "仓储与库存诊断",
+        "财务、成本与利润诊断"
+      ],
+      "missing_items": [
+        "库位管理",
+        "入库流程",
+        "出库流程",
+        "残次品管理",
+        "单款成本",
+        "费用结构",
+        "库存占用",
+        "报价逻辑"
+      ],
+      "issue_count": 2,
+      "evidence_count": 5,
+      "issues": [
+        {
+          "section": "仓储与库存诊断",
+          "risk_label": "高风险",
+          "problem": "仓储与库存诊断资料明显不足，优先补齐库位管理、入库流程、出库流程，否则难以判断真实经营问题。",
+          "owner": "仓库负责人",
+          "action": "由仓库负责人建立“仓储与库存诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "财务、成本与利润诊断",
+          "risk_label": "中风险",
+          "problem": "财务、成本与利润诊断资料明显不足，优先补齐单款成本、费用结构、库存占用，否则难以判断真实经营问题。",
+          "owner": "仓库负责人",
+          "action": "由仓库负责人建立“财务、成本与利润诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由仓库负责人牵头补齐库位管理、入库流程、出库流程，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "销售",
+      "owner": "销售负责人",
+      "score": 35,
+      "risk": "medium",
+      "risk_label": "中风险",
+      "linked_sections": [
+        "公司战略与商业模式诊断",
+        "生产跟单与交付诊断",
+        "销售与客户管理诊断",
+        "招商与渠道诊断",
+        "财务、成本与利润诊断"
+      ],
+      "missing_items": [
+        "公司定位",
+        "核心客户",
+        "盈利模式",
+        "竞争优势",
+        "客户通知",
+        "交付复盘",
+        "客户来源",
+        "推荐逻辑"
+      ],
+      "issue_count": 4,
+      "evidence_count": 16,
+      "issues": [
+        {
+          "section": "公司战略与商业模式诊断",
+          "risk_label": "高风险",
+          "problem": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+          "owner": "销售负责人",
+          "action": "由销售负责人建立“公司战略与商业模式诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "销售与客户管理诊断",
+          "risk_label": "高风险",
+          "problem": "销售与客户管理诊断资料明显不足，优先补齐客户来源、推荐逻辑、跟进记录，否则难以判断真实经营问题。",
+          "owner": "销售负责人",
+          "action": "由销售负责人建立“销售与客户管理诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "招商与渠道诊断",
+          "risk_label": "高风险",
+          "problem": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。",
+          "owner": "销售负责人",
+          "action": "由销售负责人建立“招商与渠道诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "财务、成本与利润诊断",
+          "risk_label": "中风险",
+          "problem": "财务、成本与利润诊断资料明显不足，优先补齐单款成本、费用结构、库存占用，否则难以判断真实经营问题。",
+          "owner": "销售负责人",
+          "action": "由销售负责人建立“财务、成本与利润诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由销售负责人牵头补齐公司定位、核心客户、盈利模式，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "运营",
+      "owner": "运营负责人",
+      "score": 14,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "招商与渠道诊断",
+        "线上内容与视觉诊断"
+      ],
+      "missing_items": [
+        "招商对象",
+        "招商资料",
+        "样衣展示",
+        "成交 SOP",
+        "图片资料",
+        "视频内容",
+        "账号定位",
+        "内容栏目"
+      ],
+      "issue_count": 2,
+      "evidence_count": 2,
+      "issues": [
+        {
+          "section": "招商与渠道诊断",
+          "risk_label": "高风险",
+          "problem": "招商与渠道诊断资料明显不足，优先补齐招商对象、招商资料、样衣展示，否则难以判断真实经营问题。",
+          "owner": "运营负责人",
+          "action": "由运营负责人建立“招商与渠道诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "线上内容与视觉诊断",
+          "risk_label": "高风险",
+          "problem": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。",
+          "owner": "运营负责人",
+          "action": "由运营负责人建立“线上内容与视觉诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由运营负责人牵头补齐招商对象、招商资料、样衣展示，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "财务",
+      "owner": "财务负责人",
+      "score": 26,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "设计研发诊断",
+        "财务、成本与利润诊断"
+      ],
+      "missing_items": [
+        "研发方向",
+        "款式开发计划",
+        "设计资料",
+        "开发命中率",
+        "单款成本",
+        "费用结构",
+        "库存占用",
+        "报价逻辑"
+      ],
+      "issue_count": 2,
+      "evidence_count": 6,
+      "issues": [
+        {
+          "section": "设计研发诊断",
+          "risk_label": "高风险",
+          "problem": "设计研发诊断资料明显不足，优先补齐研发方向、款式开发计划、设计资料，否则难以判断真实经营问题。",
+          "owner": "财务负责人",
+          "action": "由财务负责人建立“设计研发诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        },
+        {
+          "section": "财务、成本与利润诊断",
+          "risk_label": "中风险",
+          "problem": "财务、成本与利润诊断资料明显不足，优先补齐单款成本、费用结构、库存占用，否则难以判断真实经营问题。",
+          "owner": "财务负责人",
+          "action": "由财务负责人建立“财务、成本与利润诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由财务负责人牵头补齐研发方向、款式开发计划、设计资料，并在周会上复盘异常和改善进度。"
+    },
+    {
+      "department": "人事行政",
+      "owner": "人事负责人",
+      "score": 25,
+      "risk": "high",
+      "risk_label": "高风险",
+      "linked_sections": [
+        "组织、绩效与数据系统诊断"
+      ],
+      "missing_items": [
+        "岗位职责",
+        "权责边界",
+        "会议机制",
+        "绩效机制"
+      ],
+      "issue_count": 1,
+      "evidence_count": 2,
+      "issues": [
+        {
+          "section": "组织、绩效与数据系统诊断",
+          "risk_label": "高风险",
+          "problem": "组织、绩效与数据系统诊断资料明显不足，优先补齐岗位职责、权责边界、会议机制，否则难以判断真实经营问题。",
+          "owner": "人事负责人",
+          "action": "由人事负责人建立“组织、绩效与数据系统诊断”记录模板，明确口径、责任人、更新频率和周复盘规则。"
+        }
+      ],
+      "next_action": "由人事负责人牵头补齐岗位职责、权责边界、会议机制，并在周会上复盘异常和改善进度。"
+    }
+  ],
+  "problem_priorities": [
+    {
+      "rank": 1,
+      "section": "公司战略与商业模式诊断",
+      "score": 0,
+      "risk_label": "高风险",
+      "reason": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+      "owner": "总经理/项目负责人"
+    },
+    {
+      "rank": 2,
+      "section": "板房 / 版型 / 样衣诊断",
+      "score": 0,
+      "risk_label": "高风险",
+      "reason": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。",
+      "owner": "板房负责人"
+    },
+    {
+      "rank": 3,
+      "section": "面辅料与采购诊断",
+      "score": 0,
+      "risk_label": "高风险",
+      "reason": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+      "owner": "采购负责人"
+    },
+    {
+      "rank": 4,
+      "section": "工艺管理诊断",
+      "score": 0,
+      "risk_label": "高风险",
+      "reason": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+      "owner": "工艺负责人"
+    },
+    {
+      "rank": 5,
+      "section": "线上内容与视觉诊断",
+      "score": 0,
+      "risk_label": "高风险",
+      "reason": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。",
+      "owner": "运营负责人"
+    },
+    {
+      "rank": 6,
+      "section": "生产车间诊断",
+      "score": 4,
+      "risk_label": "高风险",
+      "reason": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。",
+      "owner": "生产负责人"
+    }
+  ],
+  "missing_data": [
+    {
+      "section": "设计研发诊断",
+      "metric": "新款开发数",
+      "meaning": "判断研发产能",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "设计研发诊断",
+      "metric": "样衣采纳率",
+      "meaning": "判断研发有效性",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "设计研发诊断",
+      "metric": "爆款率",
+      "meaning": "判断开发质量",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "设计研发诊断",
+      "metric": "样衣废版率",
+      "meaning": "判断开发浪费",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "设计研发诊断",
+      "metric": "平均开发周期",
+      "meaning": "判断研发效率",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "设计研发诊断",
+      "metric": "修改次数",
+      "meaning": "判断设计、版型、工艺沟通质量",
+      "suggested_owner": "设计研发负责人"
+    },
+    {
+      "section": "面辅料与采购诊断",
+      "metric": "面料准时到货率",
+      "meaning": "判断采购交付能力",
+      "suggested_owner": "采购负责人"
+    },
+    {
+      "section": "面辅料与采购诊断",
+      "metric": "来料不良率",
+      "meaning": "判断供应商质量",
+      "suggested_owner": "采购负责人"
+    },
+    {
+      "section": "面辅料与采购诊断",
+      "metric": "面料色差率",
+      "meaning": "判断品质风险",
+      "suggested_owner": "采购负责人"
+    },
+    {
+      "section": "面辅料与采购诊断",
+      "metric": "采购成本波动",
+      "meaning": "判断成本控制",
+      "suggested_owner": "采购负责人"
+    },
+    {
+      "section": "面辅料与采购诊断",
+      "metric": "物料齐套率",
+      "meaning": "判断生产开工稳定性",
+      "suggested_owner": "采购负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "日产量",
+      "meaning": "判断车间产能",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "人均产量",
+      "meaning": "判断人效",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "标准工时达成率",
+      "meaning": "判断生产效率",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "生产延期率",
+      "meaning": "判断交付能力",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "在制品数量",
+      "meaning": "判断流程是否堵塞",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "设备故障次数",
+      "meaning": "判断设备保障",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "生产车间诊断",
+      "metric": "异常关闭时长",
+      "meaning": "判断管理响应速度",
+      "suggested_owner": "生产负责人"
+    },
+    {
+      "section": "质量管理诊断",
+      "metric": "一次合格率",
+      "meaning": "判断生产稳定性",
+      "suggested_owner": "质检负责人"
+    },
+    {
+      "section": "质量管理诊断",
+      "metric": "返修率",
+      "meaning": "判断质量损耗",
+      "suggested_owner": "质检负责人"
+    },
+    {
+      "section": "质量管理诊断",
+      "metric": "退货率",
+      "meaning": "判断产品与质量问题",
+      "suggested_owner": "质检负责人"
+    },
+    {
+      "section": "质量管理诊断",
+      "metric": "质量异常次数",
+      "meaning": "判断管理风险",
+      "suggested_owner": "质检负责人"
+    },
+    {
+      "section": "质量管理诊断",
+      "metric": "同类问题重复率",
+      "meaning": "判断是否真正复盘",
+      "suggested_owner": "质检负责人"
+    },
+    {
+      "section": "仓储与库存诊断",
+      "metric": "错发漏发率",
+      "meaning": "判断操作质量",
+      "suggested_owner": "仓库负责人"
+    },
+    {
+      "section": "仓储与库存诊断",
+      "metric": "退货处理时长",
+      "meaning": "判断售后效率",
+      "suggested_owner": "仓库负责人"
+    },
+    {
+      "section": "仓储与库存诊断",
+      "metric": "滞销库存金额",
+      "meaning": "判断资金占用",
+      "suggested_owner": "仓库负责人"
+    },
+    {
+      "section": "仓储与库存诊断",
+      "metric": "库存周转天数",
+      "meaning": "判断资金效率",
+      "suggested_owner": "仓库负责人"
+    }
+  ],
+  "ninety_day_plan": [
+    {
+      "priority": 1,
+      "problem": "公司战略与商业模式诊断资料明显不足，优先补齐公司定位、核心客户、盈利模式，否则难以判断真实经营问题。",
+      "goal": "90 天内把公司战略与商业模式诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“公司定位”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "总经理/项目负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "复盘完成率",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    },
+    {
+      "priority": 2,
+      "problem": "板房 / 版型 / 样衣诊断资料明显不足，优先补齐打版需求单、纸样管理、样衣管理，否则难以判断真实经营问题。",
+      "goal": "90 天内把板房 / 版型 / 样衣诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“打版需求单”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "板房负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "复盘完成率",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    },
+    {
+      "priority": 3,
+      "problem": "面辅料与采购诊断资料明显不足，优先补齐面料供应商、面料质量、辅料管理，否则难以判断真实经营问题。",
+      "goal": "90 天内把面辅料与采购诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“面料供应商”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "采购负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "面料准时到货率",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    },
+    {
+      "priority": 4,
+      "problem": "工艺管理诊断资料明显不足，优先补齐工艺单、工艺说明、样衣对照，否则难以判断真实经营问题。",
+      "goal": "90 天内把工艺管理诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“工艺单”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "工艺负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "复盘完成率",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    },
+    {
+      "priority": 5,
+      "problem": "线上内容与视觉诊断资料明显不足，优先补齐图片资料、视频内容、账号定位，否则难以判断真实经营问题。",
+      "goal": "90 天内把线上内容与视觉诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“图片资料”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "运营负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "复盘完成率",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    },
+    {
+      "priority": 6,
+      "problem": "生产车间诊断资料明显不足，优先补齐车间布局、工序安排、标准工时，否则难以判断真实经营问题。",
+      "goal": "90 天内把生产车间诊断从高风险提升到可跟踪、可复盘状态。",
+      "action": "围绕“车间布局”建立标准表单、责任人、周复盘和异常处理机制。",
+      "owner": "生产负责人",
+      "timeframe": "1-30 天建表和补数据；31-60 天跑流程；61-90 天复盘固化。",
+      "check_metric": "日产量",
+      "review_mechanism": "每周检查数据更新和异常关闭情况；每月复盘指标变化、责任人动作和下月重点。"
+    }
+  ],
+  "source_package": {
+    "stats": {
+      "file_count": 8,
+      "text_chars": 4200,
+      "tables": 12
+    },
+    "files": [
+      {
+        "filename": "商品企划表.xlsx",
+        "file_type": "Excel",
+        "metadata": {},
+        "text_preview": "商品企划 品类结构 价格带 上新节奏"
+      },
+      {
+        "filename": "订单跟进表.xlsx",
+        "file_type": "Excel",
+        "metadata": {},
+        "text_preview": "订单 延期 返工 质量异常 客诉"
+      },
+      {
+        "filename": "库存与发货数据.xlsx",
+        "file_type": "Excel",
+        "metadata": {},
+        "text_preview": "库存准确率 发货及时率 库龄"
+      }
+    ]
+  },
+  "run_id": "static-preview",
+  "ai_status": "当前为 GitHub Pages 静态预览版，展示界面结构和示例诊断结果；上传、保存、导出需要部署后端后使用。"
+}
