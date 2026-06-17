@@ -8,6 +8,10 @@ const $$ = (selector) => Array.from(document.querySelectorAll(selector));
 function show(selector) { $(selector).classList.remove('hidden'); }
 function hide(selector) { $(selector).classList.add('hidden'); }
 
+function isStaticPage() {
+  return location.protocol === 'file:' || location.hostname.endsWith('github.io');
+}
+
 function siteBasePath() {
   const marker = '/modules/01-enterprise-diagnosis/';
   const markerIndex = location.pathname.indexOf(marker);
@@ -115,6 +119,11 @@ function renderModuleSwitcher() {
 }
 
 async function checkHealth() {
+  if (isStaticPage()) {
+    $('#healthDot').className = 'dot ok';
+    $('#healthText').textContent = '静态展示版｜完整上传、识别和导出请使用本地服务';
+    return;
+  }
   try {
     const response = await fetch('/api/health');
     const data = await response.json();
@@ -171,6 +180,11 @@ function renderMaterials() {
 }
 
 async function loadMaterials() {
+  if (isStaticPage()) {
+    $('#materialSummary').textContent = '当前为静态展示版。启动本地服务后，可读取企业资料中心并使用选中资料生成诊断。';
+    $('#materialList').innerHTML = '';
+    return;
+  }
   try {
     const response = await fetch('/api/materials');
     const data = await response.json();
@@ -490,6 +504,10 @@ function mergeAiResult(aiResult) {
 async function saveCurrentResult(showSuccess = true) {
   const result = collectResultEdits();
   if (!result || !currentRunId) return false;
+  if (isStaticPage()) {
+    alert('当前为静态展示版。保存修改、导出 Word/PDF 需要启动本地服务后使用。');
+    return false;
+  }
   const response = await fetch(`/api/result/${currentRunId}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -505,6 +523,10 @@ async function saveCurrentResult(showSuccess = true) {
 }
 
 async function runAnalyzeRequest(fetchOptions) {
+  if (isStaticPage()) {
+    alert('当前为 GitHub Pages 静态展示版。上传、识别、诊断和导出需要启动本地服务后使用。');
+    return;
+  }
   $('#analyzeBtn').disabled = true;
   $('#analyzeSelectedBtn').disabled = true;
   show('#progress');

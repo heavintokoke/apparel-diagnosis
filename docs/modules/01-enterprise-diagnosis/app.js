@@ -1,6 +1,6 @@
 let currentResult = null;
 let currentRunId = null;
-const STATIC_PREVIEW = true;
+let dataCenterMaterials = [];
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => Array.from(document.querySelectorAll(selector));
@@ -8,23 +8,128 @@ const $$ = (selector) => Array.from(document.querySelectorAll(selector));
 function show(selector) { $(selector).classList.remove('hidden'); }
 function hide(selector) { $(selector).classList.add('hidden'); }
 
+function isStaticPage() {
+  return location.protocol === 'file:' || location.hostname.endsWith('github.io');
+}
+
+function siteBasePath() {
+  const marker = '/modules/01-enterprise-diagnosis/';
+  const markerIndex = location.pathname.indexOf(marker);
+  if (markerIndex >= 0) {
+    return location.pathname.slice(0, markerIndex + 1);
+  }
+  if (location.pathname.endsWith('/')) {
+    return location.pathname;
+  }
+  return location.pathname.replace(/[^/]*$/, '');
+}
+
+function resolveAppLink(path) {
+  const value = String(path || '').trim();
+  if (!value) return '';
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith('#')) return value;
+  const clean = value.replace(/^\/+/, '');
+  if (location.protocol === 'file:') {
+    return `http://127.0.0.1:8770/${clean}`;
+  }
+  if (['127.0.0.1', 'localhost', '::1'].includes(location.hostname)) {
+    return `/${clean}`;
+  }
+  return `${siteBasePath()}${clean}`;
+}
+
+function resolveHomeLink(hash = '') {
+  if (location.protocol === 'file:') {
+    return `http://127.0.0.1:8770/${hash}`;
+  }
+  if (['127.0.0.1', 'localhost', '::1'].includes(location.hostname)) {
+    return `/${hash}`;
+  }
+  return `${siteBasePath()}${hash}`;
+}
+
+function normalizeStaticLinks() {
+  $$('[data-home-link]').forEach((link) => {
+    link.href = resolveHomeLink(link.dataset.homeLink || '');
+  });
+}
+
+const routeSections = ['upload', 'summary', 'report', 'flows', 'sections', 'departments', 'missing', 'aiAssist', 'plan'];
+
+function routeForHash() {
+  const hash = location.hash.replace('#', '') || 'upload';
+  if (hash === 'materialCenter') return 'upload';
+  if (routeSections.includes(hash)) return hash;
+  return 'upload';
+}
+
+function applyWorkspaceRoute() {
+  let active = routeForHash();
+  if (!currentResult && active !== 'upload') {
+    active = 'upload';
+  }
+  routeSections.forEach((id) => {
+    const node = $(`#${id}`);
+    if (!node) return;
+    const shouldShow = id === active || (currentResult && active !== 'upload' && id === 'summary');
+    node.classList.toggle('route-hidden', !shouldShow);
+  });
+  $$('.workspace-nav a[href^="#"]').forEach((link) => {
+    const rawHash = location.hash.replace('#', '') || 'upload';
+    const target = link.getAttribute('href').replace('#', '');
+    const isActive = target === rawHash || (rawHash !== 'materialCenter' && target === active);
+    link.classList.toggle('active', isActive);
+  });
+}
+
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (char) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[char]));
 }
 
+function renderSystemModuleList() {
+  const container = $('#diagnosisSideModuleList');
+  if (!container) return;
+  const modules = window.APPAREL_MODULES || [];
+  container.innerHTML = modules.map((item) => {
+    const active = item.id === 'enterprise-diagnosis' ? 'active' : '';
+    const disabled = item.link ? '' : 'disabled';
+    const content = `<strong>${escapeHtml(item.title)}</strong>`;
+    if (item.link) {
+      return `<a class="${active}" href="${resolveAppLink(item.link)}" data-module-id="${escapeHtml(item.id)}">${content}</a>`;
+    }
+    return `<button class="${disabled}" type="button" title="模块待开放" data-module-id="${escapeHtml(item.id)}">${content}</button>`;
+  }).join('');
+}
+
+function renderModuleSwitcher() {
+  const switcher = $('#moduleSwitcher');
+  if (!switcher) return;
+  const modules = window.APPAREL_MODULES || [];
+  switcher.innerHTML = modules.map((item) => {
+    const selected = item.id === 'enterprise-diagnosis' ? ' selected' : '';
+    const disabled = item.link ? '' : ' disabled';
+    const value = item.link ? resolveAppLink(item.link) : '';
+    return `<option value="${escapeHtml(value)}"${selected}${disabled}>${escapeHtml(item.title)}</option>`;
+  }).join('');
+  switcher.addEventListener('change', () => {
+    if (switcher.value) window.location.href = switcher.value;
+  });
+}
+
 async function checkHealth() {
-  if (STATIC_PREVIEW) {
+  if (isStaticPage()) {
     $('#healthDot').className = 'dot ok';
-    $('#healthText').textContent = '静态预览版：示例诊断报告已加载';
+    $('#healthText').textContent = '静态展示版｜完整上传、识别和导出请使用本地服务';
     return;
   }
   try {
     const response = await fetch('/api/health');
     const data = await response.json();
     $('#healthDot').className = 'dot ok';
-    $('#healthText').textContent = data.knowledge || '知识库已加载';
+    const materialText = data.data_center ? `｜资料中心 ${data.data_center.ready}/${data.data_center.total} 可用` : '';
+    $('#healthText').textContent = `${data.knowledge || '知识库已加载'}${materialText}`;
   } catch (error) {
     $('#healthDot').className = 'dot err';
     $('#healthText').textContent = '知识库加载失败';
@@ -34,6 +139,62 @@ async function checkHealth() {
 function selectedFilesText(files) {
   if (!files.length) return '尚未选择文件';
   return Array.from(files).map(file => `${file.name} (${Math.ceil(file.size / 1024)} KB)`).join('、');
+}
+
+function formatSize(bytes) {
+  if (!bytes) return '0 KB';
+  if (bytes < 1024 * 1024) return `${Math.ceil(bytes / 1024)} KB`;
+  return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
+}
+
+function formatDate(value) {
+  if (!value) return '-';
+  return String(value).replace('T', ' ').slice(0, 16);
+}
+
+function selectedMaterialIds() {
+  return $$('#materialList input[type="checkbox"]:checked').map(node => node.value);
+}
+
+function renderMaterials() {
+  const ready = dataCenterMaterials.filter(item => item.extract_status === 'ready');
+  $('#materialSummary').textContent = `共有 ${dataCenterMaterials.length} 份资料，${ready.length} 份可用于诊断。`;
+  if (!dataCenterMaterials.length) {
+    $('#materialList').innerHTML = '<p class="empty-state">资料中心暂无资料。上传企业资料后，会自动沉淀到这里。</p>';
+    return;
+  }
+  $('#materialList').innerHTML = dataCenterMaterials.map(item => `
+    <label class="material-row ${item.extract_status !== 'ready' ? 'disabled' : ''}">
+      <input type="checkbox" value="${escapeHtml(item.id)}" ${item.extract_status !== 'ready' ? 'disabled' : ''} />
+      <span class="material-main">
+        <strong>${escapeHtml(item.filename)}</strong>
+        <span>${escapeHtml(item.file_type || '-')}｜${formatSize(item.size)}｜${formatDate(item.uploaded_at)}</span>
+        ${item.text_preview ? `<em>${escapeHtml(item.text_preview)}</em>` : ''}
+        ${item.extract_error ? `<em class="error-text">${escapeHtml(item.extract_error)}</em>` : ''}
+      </span>
+      <span class="material-tags">
+        ${(item.categories || []).slice(0, 4).map(category => `<b>${escapeHtml(category)}</b>`).join('')}
+      </span>
+    </label>
+  `).join('');
+}
+
+async function loadMaterials() {
+  if (isStaticPage()) {
+    $('#materialSummary').textContent = '当前为静态展示版。启动本地服务后，可读取企业资料中心并使用选中资料生成诊断。';
+    $('#materialList').innerHTML = '';
+    return;
+  }
+  try {
+    const response = await fetch('/api/materials');
+    const data = await response.json();
+    if (!data.ok) throw new Error(data.error || '资料中心读取失败');
+    dataCenterMaterials = data.materials || [];
+    renderMaterials();
+  } catch (error) {
+    $('#materialSummary').textContent = error.message || '资料中心读取失败';
+    $('#materialList').innerHTML = '';
+  }
 }
 
 function averageScore(result) {
@@ -274,11 +435,8 @@ function renderResult(result) {
 
   $('#docxLink').href = `/api/report/${currentRunId}.docx`;
   $('#pdfLink').href = `/api/report/${currentRunId}.pdf`;
-  if (STATIC_PREVIEW) {
-    $('#docxLink').href = '#';
-    $('#pdfLink').href = '#';
-  }
   ['#summary', '#report', '#flows', '#sections', '#departments', '#missing', '#aiAssist', '#plan'].forEach(show);
+  applyWorkspaceRoute();
 }
 
 function collectResultEdits() {
@@ -346,9 +504,9 @@ function mergeAiResult(aiResult) {
 async function saveCurrentResult(showSuccess = true) {
   const result = collectResultEdits();
   if (!result || !currentRunId) return false;
-  if (STATIC_PREVIEW) {
-    if (showSuccess) alert('当前是静态预览版，修改只会临时显示在本页面；正式保存需要部署后端。');
-    return true;
+  if (isStaticPage()) {
+    alert('当前为静态展示版。保存修改、导出 Word/PDF 需要启动本地服务后使用。');
+    return false;
   }
   const response = await fetch(`/api/result/${currentRunId}`, {
     method: 'POST',
@@ -364,14 +522,33 @@ async function saveCurrentResult(showSuccess = true) {
   return true;
 }
 
-async function loadResultFromQuery() {
-  if (STATIC_PREVIEW) {
-    const response = await fetch('demo-result.json');
-    const result = await response.json();
-    renderResult(result);
-    location.hash = location.hash || '#summary';
+async function runAnalyzeRequest(fetchOptions) {
+  if (isStaticPage()) {
+    alert('当前为 GitHub Pages 静态展示版。上传、识别、诊断和导出需要启动本地服务后使用。');
     return;
   }
+  $('#analyzeBtn').disabled = true;
+  $('#analyzeSelectedBtn').disabled = true;
+  show('#progress');
+  try {
+    const response = await fetch('/api/analyze', fetchOptions);
+    const data = await response.json();
+    if (!data.ok) throw new Error(data.error || '分析失败');
+    renderResult(data.result);
+    await loadMaterials();
+    await checkHealth();
+    location.hash = '#report';
+    applyWorkspaceRoute();
+  } catch (error) {
+    alert(error.message);
+  } finally {
+    $('#analyzeBtn').disabled = false;
+    $('#analyzeSelectedBtn').disabled = false;
+    hide('#progress');
+  }
+}
+
+async function loadResultFromQuery() {
   const params = new URLSearchParams(location.search);
   const runId = params.get('run_id');
   if (!runId) return;
@@ -379,7 +556,8 @@ async function loadResultFromQuery() {
     const response = await fetch(`/api/result/${encodeURIComponent(runId)}`);
     const result = await response.json();
     renderResult(result);
-    location.hash = location.hash || '#summary';
+    location.hash = location.hash || '#report';
+    applyWorkspaceRoute();
   } catch (error) {
     $('#healthDot').className = 'dot err';
     $('#healthText').textContent = '历史诊断结果加载失败';
@@ -392,10 +570,6 @@ $('#files').addEventListener('change', (event) => {
 
 $('#uploadForm').addEventListener('submit', async (event) => {
   event.preventDefault();
-  if (STATIC_PREVIEW) {
-    alert('当前是静态预览版，只展示界面和示例报告；上传资料诊断需要部署后端后使用。');
-    return;
-  }
   const files = $('#files').files;
   if (!files.length) {
     alert('请先选择企业资料文件。');
@@ -403,20 +577,30 @@ $('#uploadForm').addEventListener('submit', async (event) => {
   }
   const formData = new FormData();
   Array.from(files).forEach(file => formData.append('files', file));
-  $('#analyzeBtn').disabled = true;
-  show('#progress');
-  try {
-    const response = await fetch('/api/analyze', { method: 'POST', body: formData });
-    const data = await response.json();
-    if (!data.ok) throw new Error(data.error || '分析失败');
-    renderResult(data.result);
-    location.hash = '#summary';
-  } catch (error) {
-    alert(error.message);
-  } finally {
-    $('#analyzeBtn').disabled = false;
-    hide('#progress');
+  await runAnalyzeRequest({ method: 'POST', body: formData });
+});
+
+$('#refreshMaterialsBtn').addEventListener('click', async () => {
+  await loadMaterials();
+});
+
+$('#selectAllMaterialsBtn').addEventListener('click', () => {
+  $$('#materialList input[type="checkbox"]:not(:disabled)').forEach(node => {
+    node.checked = true;
+  });
+});
+
+$('#analyzeSelectedBtn').addEventListener('click', async () => {
+  const materialIds = selectedMaterialIds();
+  if (!materialIds.length) {
+    alert('请先在资料中心选择可用资料。');
+    return;
   }
+  await runAnalyzeRequest({
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ material_ids: materialIds })
+  });
 });
 
 $('#riskFilter').addEventListener('change', () => {
@@ -467,13 +651,11 @@ $('#mergeAiBtn').addEventListener('click', async () => {
   }
 });
 
-['#docxLink', '#pdfLink'].forEach((selector) => {
-  $(selector).addEventListener('click', (event) => {
-    if (!STATIC_PREVIEW) return;
-    event.preventDefault();
-    alert('当前是静态预览版，导出 Word/PDF 需要部署后端后使用。');
-  });
-});
-
+normalizeStaticLinks();
+renderSystemModuleList();
+renderModuleSwitcher();
 checkHealth();
+loadMaterials();
 loadResultFromQuery();
+window.addEventListener('hashchange', applyWorkspaceRoute);
+applyWorkspaceRoute();
