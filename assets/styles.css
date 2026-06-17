@@ -787,6 +787,16 @@ h3 {
     text-align: center;
   }
 
+  .upload-material-action {
+    flex: 0 0 auto;
+    min-width: 104px;
+    min-height: 42px;
+    padding: 0 18px;
+    align-self: center;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
   .workband,
   .detail-panel {
     border-radius: 18px;
