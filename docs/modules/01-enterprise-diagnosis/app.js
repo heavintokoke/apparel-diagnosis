@@ -54,6 +54,24 @@ function normalizeStaticLinks() {
   });
 }
 
+function normalizeVersionUrl() {
+  const params = new URLSearchParams(location.search);
+  if (isStaticPage()) {
+    const baseUrl = `${location.origin}${siteBasePath()}`;
+    const isFromSystemHome = document.referrer.startsWith(baseUrl);
+    if (params.has('v') || !isFromSystemHome) {
+      location.replace(resolveHomeLink(''));
+      return true;
+    }
+  }
+  if (params.has('v')) {
+    params.delete('v');
+    const query = params.toString();
+    history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${location.hash}`);
+  }
+  return false;
+}
+
 const routeSections = ['upload', 'summary', 'report', 'flows', 'sections', 'departments', 'missing', 'aiAssist', 'plan'];
 
 function routeForHash() {
@@ -651,11 +669,13 @@ $('#mergeAiBtn').addEventListener('click', async () => {
   }
 });
 
-normalizeStaticLinks();
-renderSystemModuleList();
-renderModuleSwitcher();
-checkHealth();
-loadMaterials();
-loadResultFromQuery();
-window.addEventListener('hashchange', applyWorkspaceRoute);
-applyWorkspaceRoute();
+if (!normalizeVersionUrl()) {
+  normalizeStaticLinks();
+  renderSystemModuleList();
+  renderModuleSwitcher();
+  checkHealth();
+  loadMaterials();
+  loadResultFromQuery();
+  window.addEventListener('hashchange', applyWorkspaceRoute);
+  applyWorkspaceRoute();
+}

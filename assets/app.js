@@ -39,6 +39,14 @@ function normalizeStaticLinks() {
   });
 }
 
+function cleanVersionQuery() {
+  const params = new URLSearchParams(location.search);
+  if (!params.has("v")) return;
+  params.delete("v");
+  const query = params.toString();
+  history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+}
+
 function statusLabel(status) {
   return status === "ready" ? "可使用" : "待开放";
 }
@@ -273,6 +281,7 @@ function bindDataCenter() {
 }
 
 function init() {
+  cleanVersionQuery();
   normalizeStaticLinks();
   renderSideModuleList();
   renderModuleGrid();
