@@ -1,5 +1,6 @@
 let currentResult = null;
 let currentRunId = null;
+const STATIC_PREVIEW = true;
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => Array.from(document.querySelectorAll(selector));
@@ -14,6 +15,11 @@ function escapeHtml(value) {
 }
 
 async function checkHealth() {
+  if (STATIC_PREVIEW) {
+    $('#healthDot').className = 'dot ok';
+    $('#healthText').textContent = '静态预览版：示例诊断报告已加载';
+    return;
+  }
   try {
     const response = await fetch('/api/health');
     const data = await response.json();
@@ -268,6 +274,10 @@ function renderResult(result) {
 
   $('#docxLink').href = `/api/report/${currentRunId}.docx`;
   $('#pdfLink').href = `/api/report/${currentRunId}.pdf`;
+  if (STATIC_PREVIEW) {
+    $('#docxLink').href = '#';
+    $('#pdfLink').href = '#';
+  }
   ['#summary', '#report', '#flows', '#sections', '#departments', '#missing', '#aiAssist', '#plan'].forEach(show);
 }
 
@@ -336,6 +346,10 @@ function mergeAiResult(aiResult) {
 async function saveCurrentResult(showSuccess = true) {
   const result = collectResultEdits();
   if (!result || !currentRunId) return false;
+  if (STATIC_PREVIEW) {
+    if (showSuccess) alert('当前是静态预览版，修改只会临时显示在本页面；正式保存需要部署后端。');
+    return true;
+  }
   const response = await fetch(`/api/result/${currentRunId}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -351,6 +365,13 @@ async function saveCurrentResult(showSuccess = true) {
 }
 
 async function loadResultFromQuery() {
+  if (STATIC_PREVIEW) {
+    const response = await fetch('demo-result.json');
+    const result = await response.json();
+    renderResult(result);
+    location.hash = location.hash || '#summary';
+    return;
+  }
   const params = new URLSearchParams(location.search);
   const runId = params.get('run_id');
   if (!runId) return;
@@ -371,6 +392,10 @@ $('#files').addEventListener('change', (event) => {
 
 $('#uploadForm').addEventListener('submit', async (event) => {
   event.preventDefault();
+  if (STATIC_PREVIEW) {
+    alert('当前是静态预览版，只展示界面和示例报告；上传资料诊断需要部署后端后使用。');
+    return;
+  }
   const files = $('#files').files;
   if (!files.length) {
     alert('请先选择企业资料文件。');
@@ -440,6 +465,14 @@ $('#mergeAiBtn').addEventListener('click', async () => {
   } catch (error) {
     $('#mergeStatus').textContent = '无法解析 JSON，请检查 ChatGPT 返回内容。';
   }
+});
+
+['#docxLink', '#pdfLink'].forEach((selector) => {
+  $(selector).addEventListener('click', (event) => {
+    if (!STATIC_PREVIEW) return;
+    event.preventDefault();
+    alert('当前是静态预览版，导出 Word/PDF 需要部署后端后使用。');
+  });
 });
 
 checkHealth();

@@ -4,39 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>服装企业全链路经营诊断</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="app-shell">
       <aside class="side">
         <div class="brand">
-          <div class="brand-mark">诊</div>
           <div>
-            <h1>全链路经营诊断</h1>
-            <p>本地资料分析工具</p>
+            <h1>经营管理提效工具</h1>
+            <p>服装企业系统工作台</p>
           </div>
         </div>
-        <div class="status-box">
-          <span id="healthDot" class="dot"></span>
-          <span id="healthText">正在检查诊断知识库</span>
-        </div>
-        <nav>
-          <a href="#upload">上传资料</a>
-          <a href="#report">诊断报告</a>
-          <a href="#flows">主线流程</a>
-          <a href="#sections">16 板块详情</a>
-          <a href="#departments">部门问题</a>
-          <a href="#aiAssist">ChatGPT 增强</a>
-          <a href="#plan">90 天计划</a>
+        <nav class="side-nav" aria-label="主导航">
+          <a href="/">总台</a>
+          <a href="/#dataCenter">资料中心</a>
         </nav>
+        <div class="side-module-block">
+          <p>经营模块</p>
+          <div id="diagnosisSideModuleList" class="side-module-list"></div>
+        </div>
       </aside>
 
       <main>
+        <div class="mobile-module-bar">
+          <a class="mobile-back-link" href="/">返回</a>
+          <select id="moduleSwitcher" aria-label="切换经营模块"></select>
+        </div>
+        <header class="workspace-topbar">
+          <div class="workspace-title">
+            <p class="eyebrow">Enterprise Diagnosis</p>
+            <h2>企业经营诊断系统</h2>
+          </div>
+          <nav class="workspace-nav" aria-label="经营诊断导航">
+            <a href="#upload">上传资料</a>
+            <a href="#materialCenter">资料中心</a>
+            <a href="#report">诊断报告</a>
+            <a href="#flows">主线流程</a>
+            <a href="#sections">16 板块详情</a>
+            <a href="#departments">部门问题</a>
+            <a href="#aiAssist">ChatGPT 增强</a>
+            <a href="#plan">90 天计划</a>
+          </nav>
+          <div class="status-box">
+            <span id="healthDot" class="dot"></span>
+            <span id="healthText">正在检查诊断知识库</span>
+          </div>
+        </header>
         <section id="upload" class="panel upload-panel">
           <div>
             <p class="eyebrow">Local Diagnostic Workspace</p>
             <h2>上传企业资料，生成诊断报告</h2>
-            <p class="muted">支持 Word、Excel、PDF、图片、CSV、文本。系统先做本地规则诊断，再生成可复制到 ChatGPT 的增强分析提示词。</p>
+            <p class="muted">支持 Word、Excel、PDF、图片、CSV、文本。上传后的资料会进入统一资料中心，后续诊断、商品、订单、销售、财务、人效模块都可以复用。</p>
           </div>
           <form id="uploadForm" class="upload-form">
             <label class="drop-zone" for="files">
@@ -49,6 +67,22 @@
           <div id="progress" class="progress hidden">
             <div class="bar"><span></span></div>
             <p>正在抽取资料、匹配 16 个诊断板块并生成改善计划。</p>
+          </div>
+          <div id="materialCenter" class="material-center">
+            <div class="material-head">
+              <div>
+                <p class="eyebrow">Enterprise Data Center</p>
+                <h3>统一资料中心</h3>
+                <p class="muted">企业资料只需上传一次。这里的资料会先完成识别和分类，诊断模块现在直接引用这些资料生成报告。</p>
+              </div>
+              <div class="actions">
+                <button id="refreshMaterialsBtn" type="button" class="secondary">刷新资料</button>
+                <button id="selectAllMaterialsBtn" type="button" class="secondary">全选可用资料</button>
+                <button id="analyzeSelectedBtn" type="button">用选中资料诊断</button>
+              </div>
+            </div>
+            <div id="materialSummary" class="material-summary">正在读取资料中心</div>
+            <div id="materialList" class="material-list"></div>
           </div>
         </section>
 
@@ -213,6 +247,7 @@
         </div>
       </article>
     </template>
-    <script src="/app.js"></script>
+    <script src="/assets/modules-data.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

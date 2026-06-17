@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>服装企业全链路经营诊断｜静态预览</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="side">
+        <div class="brand">
+          <div class="brand-mark">诊</div>
+          <div>
+            <h1>全链路经营诊断</h1>
+            <p>静态预览版</p>
+          </div>
+        </div>
+        <div class="status-box">
+          <span id="healthDot" class="dot"></span>
+          <span id="healthText">正在检查诊断知识库</span>
+        </div>
+        <nav>
+          <a href="#upload">上传资料</a>
+          <a href="#report">诊断报告</a>
+          <a href="#flows">主线流程</a>
+          <a href="#sections">16 板块详情</a>
+          <a href="#departments">部门问题</a>
+          <a href="#aiAssist">ChatGPT 增强</a>
+          <a href="#plan">90 天计划</a>
+        </nav>
+      </aside>
+
+      <main>
+        <section id="upload" class="panel upload-panel">
+          <div>
+            <p class="eyebrow">Static Preview</p>
+            <h2>上传企业资料，生成诊断报告</h2>
+            <p class="muted">当前链接用于展示工具界面和示例诊断结果。上传、保存、导出 Word/PDF 需要部署后端后使用。</p>
+          </div>
+          <form id="uploadForm" class="upload-form">
+            <label class="drop-zone" for="files">
+              <input id="files" name="files" type="file" multiple accept=".docx,.xlsx,.xlsm,.pdf,.png,.jpg,.jpeg,.webp,.bmp,.csv,.txt,.md" />
+              <span class="drop-title">选择或拖入资料文件</span>
+              <span id="fileList" class="drop-sub">尚未选择文件</span>
+            </label>
+            <button id="analyzeBtn" type="submit">开始诊断</button>
+          </form>
+          <div id="progress" class="progress hidden">
+            <div class="bar"><span></span></div>
+            <p>正在抽取资料、匹配 16 个诊断板块并生成改善计划。</p>
+          </div>
+        </section>
+
+        <section id="summary" class="summary-grid hidden">
+          <article class="metric-card">
+            <span>平均得分</span>
+            <strong id="avgScore">-</strong>
+          </article>
+          <article class="metric-card">
+            <span>高风险板块</span>
+            <strong id="highRisk">-</strong>
+          </article>
+          <article class="metric-card">
+            <span>关键数据缺失</span>
+            <strong id="missingCount">-</strong>
+          </article>
+          <article class="metric-card">
+            <span>资料文件</span>
+            <strong id="fileCount">-</strong>
+          </article>
+          <article class="metric-card">
+            <span>主线高风险</span>
+            <strong id="mainLineRisk">-</strong>
+          </article>
+          <article class="metric-card">
+            <span>部门问题</span>
+            <strong id="departmentIssueCount">-</strong>
+          </article>
+        </section>
+
+        <section id="report" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Report Preview</p>
+              <h2>诊断报告预览</h2>
+            </div>
+            <div class="actions">
+              <button id="saveBtn" type="button">保存修改</button>
+              <a id="docxLink" class="button secondary" href="#">导出 Word</a>
+              <a id="pdfLink" class="button secondary" href="#">导出 PDF</a>
+            </div>
+          </div>
+          <label class="field-label" for="companySnapshot">公司现状</label>
+          <textarea id="companySnapshot" rows="3"></textarea>
+          <label class="field-label" for="executiveSummary">经营诊断摘要</label>
+          <textarea id="executiveSummary" rows="4"></textarea>
+          <p id="aiStatus" class="ai-status"></p>
+          <div class="two-col">
+            <div>
+              <h3>核心问题</h3>
+              <div id="coreFindings" class="editable-list"></div>
+            </div>
+            <div>
+              <h3>根因分析</h3>
+              <div id="rootCauses" class="editable-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="flows" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Main Lines & Workflows</p>
+              <h2>4 条流程与 6 个经营判断</h2>
+            </div>
+          </div>
+          <div id="mainLineCards" class="main-line-grid"></div>
+          <div id="flowCards" class="flow-list"></div>
+        </section>
+
+        <section id="sections" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Diagnostic Matrix</p>
+              <h2>16 个板块诊断明细</h2>
+            </div>
+            <select id="riskFilter">
+              <option value="all">全部风险</option>
+              <option value="high">高风险</option>
+              <option value="medium">中风险</option>
+              <option value="low">低风险</option>
+            </select>
+          </div>
+          <div id="sectionCards" class="section-cards"></div>
+        </section>
+
+        <section id="departments" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Department Issue List</p>
+              <h2>部门诊断问题清单</h2>
+            </div>
+          </div>
+          <div id="departmentCards" class="department-grid"></div>
+        </section>
+
+        <section id="missing" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Data Gaps</p>
+              <h2>关键数据缺失清单</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>板块</th><th>缺失指标</th><th>意义</th><th>建议责任人</th></tr>
+              </thead>
+              <tbody id="missingRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="aiAssist" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">ChatGPT Assisted Analysis</p>
+              <h2>ChatGPT 半自动增强</h2>
+            </div>
+            <button id="copyPromptBtn" type="button">复制提示词</button>
+          </div>
+          <label class="field-label" for="manualPrompt">给 ChatGPT 的分析提示词</label>
+          <textarea id="manualPrompt" rows="10" readonly></textarea>
+          <label class="field-label" for="manualResponse">粘贴 ChatGPT 返回的 JSON 结果</label>
+          <textarea id="manualResponse" rows="8"></textarea>
+          <div class="actions ai-actions">
+            <button id="mergeAiBtn" type="button">合并到当前报告</button>
+            <span id="mergeStatus" class="muted"></span>
+          </div>
+        </section>
+
+        <section id="plan" class="panel hidden">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">90-Day Plan</p>
+              <h2>90 天经营改善计划</h2>
+            </div>
+            <button id="addPlanBtn" type="button">新增动作</button>
+          </div>
+          <div id="planList" class="plan-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <template id="listItemTemplate">
+      <textarea rows="2"></textarea>
+    </template>
+    <template id="planTemplate">
+      <article class="plan-card">
+        <div class="plan-top">
+          <span class="priority"></span>
+          <button type="button" class="remove-plan">删除</button>
+        </div>
+        <label>问题<textarea data-key="problem" rows="2"></textarea></label>
+        <label>目标<textarea data-key="goal" rows="2"></textarea></label>
+          <label>动作<textarea data-key="action" rows="3"></textarea></label>
+        <label>复盘机制<textarea data-key="review_mechanism" rows="2"></textarea></label>
+        <div class="plan-grid">
+          <label>负责人<input data-key="owner" /></label>
+          <label>时间<input data-key="timeframe" /></label>
+          <label>检查指标<input data-key="check_metric" /></label>
+        </div>
+      </article>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
